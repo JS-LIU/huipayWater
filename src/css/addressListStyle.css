@@ -1,0 +1,60 @@
+input:-ms-input-placeholder{
+    color: #999;opacity:1;
+}
+
+input::-webkit-input-placeholder{
+    color: #999;opacity:1;
+}
+.bb{
+    border-bottom: 0.01rem solid #EEEFF3;
+}
+.address{
+    min-height: 13.33rem;
+    composes:bgColor f30 c333 from '../css/base.css';
+}
+.hand_input{
+    height: 0.94rem;
+    background: #f1f1f3;
+    composes:pl30 pr30 from '../css/base.css';
+}
+.address_input{
+    margin-top: 0.17rem;
+    padding:0.15rem 0.2rem;
+    width: 94.4%;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    border-radius: 0.05rem;
+    border:none;
+    outline:medium;
+    background: #FFFFFF;
+    composes:f24 from '../css/base.css';
+}
+.address_list{
+    height: 2rem;
+    width: 100%;
+    background: #FFFFFF;
+}
+.addressNode{
+    padding:0.2rem 0.3rem;
+    composes:bb;
+    composes:bgColorF from '../css/base.css';
+}
+.linkman{
+    display:flex;
+    align-items: center;
+    height: 0.6rem;
+}
+.default_pic{
+    height: 0.35rem;
+    margin-top: 0.03rem;
+    margin-right: 0.2rem;
+}
+.consignee{
+    margin-right: 0.5rem;
+}
+.telephone{
+    margin-right: 0.3rem;
+}
+.location{
+    composes:f24 c777 from '../css/base.css';
+}

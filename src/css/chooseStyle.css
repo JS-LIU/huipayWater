@@ -1,0 +1,24 @@
+.choose{
+    height: 13.33rem;
+    composes:bgColor from '../css/base.css';
+}
+.chooseType{
+    padding: 0.46rem 0 0.12rem 0.4rem;
+    composes:f32 c333 from '../css/base.css';
+}
+.chooseContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: -0.3rem;
+    padding:0.38rem 0.3rem;
+    composes:bgColorF f30 c333 tc from '../css/base.css';
+}
+.chooseItem{
+    width:1.5rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    margin-bottom: 0.2rem;
+    border:0.01rem solid #E3E3E3;
+    composes:mr24 from '../css/base.css';
+}

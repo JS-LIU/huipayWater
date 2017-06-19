@@ -1,0 +1,150 @@
+.bb{
+    border-bottom:0.01rem solid #EEEFF3;
+}
+.indentDetail{
+    min-height: 13.33rem;
+    composes:bgColor f28 c777 from '../css/base.css';
+}
+.indent_info{
+    height: 1.7rem;
+    composes:bgColorF pl30 pr30 mb30 from '../css/base.css';
+}
+.indent_serial{
+    margin-top: 0.17rem;
+}
+.indent_info p{
+    height: 0.5rem;
+    line-height: 0.5rem;
+}
+.indent_condition{
+    color: #4dc0ff;
+}
+.indent_delivery{
+    display: flex;
+    height: 1.8rem;
+    composes:bgColorF pl30 pr30 c333 from '../css/base.css';
+}
+.recipient{
+    width: 2.05rem;
+    line-height: 0.5rem;
+    margin-top: 0.15rem;
+    padding-left: 0.45rem;
+    background: url("../../src/images/address-05.png") no-repeat left 0.1rem;
+    background-size: 0.3rem;
+    composes:f30 c333 from '../css/base.css';
+}
+.recipient_address{
+    margin-top: 0.15rem;
+    line-height: 0.5rem;
+    composes:f26 from '../css/base.css';
+}
+.recipient_phone{
+    display: inline-block;
+    float: right;
+}
+.indent_store{
+    composes:bgColorF f28 c777 mt30 from '../css/base.css'
+}
+.store_header{
+    height:0.84rem;
+    line-height: 0.84rem;
+    padding-left:0.7rem;
+    background: url("../../src/images/shoppingcart_icon_station.png") no-repeat 0.3rem center;
+    background-size: 0.3rem;
+    composes:bb;
+    composes:f30 from '../css/base.css';
+}
+.right_more{
+    float: right;
+    margin-right: 0.3rem;
+    margin-top:0.33rem;
+    height: 0.3rem;
+    width: 0.18rem;
+}
+.productNodes{
+    display: flex;
+    align-items: center;
+    composes:bb;
+}
+.product_pic{
+    display: flex;
+    align-items: center;
+    height:1.4rem;
+    width: 1.4rem;
+    margin: 0.2rem 0.3rem;
+    border:0.01rem solid #eee;
+}
+.product_detail{
+    margin-top: 0.1rem;
+    margin-left: -0.1rem;
+    line-height: 0.4rem;
+    composes:f26 c333 from '../css/base.css';
+}
+.product_name{
+    composes:f30 from '../css/base.css';
+}
+.product_volume{
+    composes:c999 from '../css/base.css';
+}
+.product_sale{
+    composes:f30 from '../css/base.css';
+}
+.charge{
+    display: flex;
+    justify-content:space-between;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    composes:bb;
+    composes:pl30 pr30 c333 from '../css/base.css';
+}
+.charge_title{
+    composes:c777 from '../css/base.css';
+}
+.cost{
+    height: 0.7rem;
+    line-height: 0.7rem;
+    composes:pl30 pr30 c333 from '../css/base.css';
+}
+.cost_descript{
+    float: right;
+}
+.cost_unit{
+    color:#FF4243;
+    composes:f24 from '../css/base.css';
+}
+.const_money{
+    color:#FF4243;
+    composes:f30 from '../css/base.css';
+}
+.delivery_way{
+    composes:mt30 bgColorF f30 from '../css/base.css';
+}
+.way_title{
+    composes: bb;
+    composes:pl30 pr30 from '../css/base.css';
+}
+.way_detail{
+    height:0.9rem;
+    line-height: 0.9rem;
+    composes:f26 c333 from '../css/base.css';
+}
+.footer_operate{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    composes:bb;
+    composes:bgColorF from '../css/base.css';
+}
+.operate_item{
+    float: right;
+    margin-top:0.2rem;
+    margin-right:0.2rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    width:1.3rem;
+    color: #4dc0ff;
+    border:0.01rem solid #4dc0ff;
+    composes:f28 tc from '../css/base.css';
+}

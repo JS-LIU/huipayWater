@@ -1,0 +1,91 @@
+.bb{
+    border-bottom:0.01rem solid #EEEFF3;
+}
+.allIndents{
+    min-height: 13.33rem;
+    margin-top: -0.3rem;
+    composes:bgColor pb30 from '../css/base.css';
+}
+.indentsNodes{
+    composes:mt30 bgColorF f30 c777 from '../css/base.css'
+}
+.indents_head{
+    display: flex;
+    justify-content: space-between;
+    height: 0.84rem;
+    line-height: 0.84rem;
+    composes:bb;
+}
+.indents_store_name{
+    padding-left: 0.7rem;
+    background: url("../../src/images/shoppingcart_icon_station.png") no-repeat 0.3rem center;
+    background-size: 0.3rem;
+}
+.indents_state{
+    color:#4dc0ff;
+    composes:f26 pr30 from '../css/base.css';
+}
+.productList{
+    composes:bgColorF from '../css/base.css';
+}
+.productNodes{
+    display: flex;
+    align-items: center;
+    composes:bb;
+}
+.product_pic{
+    display: flex;
+    align-items: center;
+    height:1.4rem;
+    width: 1.4rem;
+    margin: 0.2rem 0.3rem;
+    border:0.01rem solid #eee;
+}
+.product_pic img{
+    width:100%;
+}
+.product_detail{
+    margin-top: 0.1rem;
+    line-height: 0.4rem;
+    composes:f24 c333 from '../css/base.css';
+}
+.product_name{
+    composes:f30 from '../css/base.css';
+}
+.product_volume{
+    composes:c999 from '../css/base.css';
+}
+.product_sale{
+    composes:f30 from '../css/base.css';
+}
+.statistics{
+    height: 0.84rem;
+    line-height: 0.84rem;
+    text-align: right;
+    composes:bb;
+    composes:f26 c777 from '../css/base.css';
+}
+.price_unit{
+    color: #FF4243;
+}
+.price_total{
+    color: #FF4243;
+    margin-right: 0.3rem;
+    composes:f30 from '../css/base.css';
+}
+.next_operate{
+    height: 0.84rem;
+    line-height: 0.84rem;
+    padding-right: 0.3rem;
+}
+.operate_item{
+    float: right;
+    margin-top:0.17rem;
+    margin-left:0.2rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    width:1.3rem;
+    color: #4dc0ff;
+    border:0.01rem solid #4dc0ff;
+    composes:f28 tc from '../css/base.css';
+}

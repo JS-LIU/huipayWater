@@ -1,0 +1,72 @@
+.my{
+    height: 12rem;
+    composes:bgColor pt30 from '../css/base.css';
+}
+.my_header{
+    display: flex;
+    height: 1.6rem;
+    border-bottom: 0.01rem solid #EEEFF3;
+    composes: pl30 pr30 bgColorF from '../css/base.css';
+}
+.my_header_icon{
+    margin-top: 0.2rem;
+    height: 1.2rem;
+    width: 1.2rem;
+}
+.header_icon_pic{
+    composes:w h from '../css/base.css';
+}
+.my_info{
+    flex:9;
+    margin-left: 0.24rem;
+    composes:f26 c999 from '../css/base.css';
+}
+.my_info_name{
+    margin-top: 0.3rem;
+    margin-bottom:0.1rem;
+    composes:f32 c333 from '../css/base.css';
+}
+.more_right_btn{
+    flex:1
+}
+.rightBtn{
+    float: right;
+    margin-top: 0.65rem;
+    height: 0.3rem;
+    width:0.18rem;
+}
+.general_idea{
+    display: flex;
+    align-items: center;
+    height: 1.3rem;
+    composes:bgColorF from '../css/base.css';
+}
+.idea_item{
+    flex:1;
+    composes:f34 c333 tc from '../css/base.css';
+}
+.idea_item_describe{
+    line-height: 0.45rem;
+    composes:f26 from '../css/base.css';
+}
+.my_order{
+    composes:mt30 bgColorF f24 c999 from '../css/base.css';
+}
+.my_order_title{
+    height:0.7rem;
+    line-height: 0.7rem;
+    border-bottom: 0.01rem solid #EEEFF3;
+    background: url("../../src/images/me_icon_order.png") no-repeat 0.3rem center;
+    background-size: 0.32rem 0.35rem;
+    composes:pl50 pr30 from '../css/base.css';
+}
+.title_text{
+    float: left;
+    composes: f32 c333 pl30 from '../css/base.css';
+}
+.check_more{
+    float: right;
+    background:url("../../src/images/btn_right_arrow@2x.png") no-repeat right center;
+    background-size: 0.18rem 0.3rem;
+    composes:pr30 from '../css/base.css';
+}

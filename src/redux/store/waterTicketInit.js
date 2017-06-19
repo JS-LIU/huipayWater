@@ -1,0 +1,60 @@
+export const waterTicketInit ={
+    ticketList:[
+        {
+            title:'喜腾山泉',
+            subTitle:'天然饮用水 18L',
+            price:"22.00",
+            scope:"全市通用",
+            promote:{
+                onePhase:'买10送1',
+                twoPhase:'买20送3',
+                thrPhase:'买100送20',
+            },
+        },
+        {
+            title:'农夫山泉',
+            subTitle:'天然饮用水 19L',
+            price:"22.00",
+            scope:"全市通用",
+            promote:{
+                onePhase:'买10送1',
+                twoPhase:'买20送3',
+                thrPhase:'买100送20',
+            },
+        },
+        {
+            title:'雀巢',
+            subTitle:'天然饮用水 18.9L',
+            price:"22.00",
+            scope:"全市通用",
+            promote:{
+                onePhase:'买10送1',
+                twoPhase:'买20送3',
+                thrPhase:'买100送20',
+            },
+        },
+    ],
+    last:false,
+    type:[
+        {
+            varietyId:{tagName:"推荐"},
+            title:"推荐",
+            selected:true
+        },
+        {
+            varietyId:{salesTag:-1},
+            title:"销量",
+            selected:false
+        },
+        {
+            varietyId:{priceTag:-1},
+            title:"价格",
+            selected:false
+        },
+        {
+            varietyId:{priceTag:-1},
+            title:"品牌",
+            selected:false
+        },
+    ]
+};

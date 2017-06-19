@@ -1,0 +1,193 @@
+.bgColor{
+    background: #EEEFF3;
+}
+.ticketList{
+    padding-bottom: 0.2rem;
+    background: #EEEFF3;
+}
+.product_type{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:0.19rem;
+    padding-bottom:0.19rem;
+    height: 0.6rem;
+    line-height:0.6rem;
+    border-top: 0.01rem solid #E3E3E3;
+    background: #FFFFFF;
+    composes: f30 from '../css/base.css';
+}
+.product_type_item{
+    display: flex;
+    flex:1;
+    border-left:0.01rem solid #E3E3E3;
+    margin-left: -0.02rem;
+    justify-content:center;
+}
+.type_item_title{
+    float: left;
+    padding:0 0.1rem;
+}
+.ticketList_item{
+    margin-top: 0.2rem;
+    background: #FFFFFF;
+}
+.item_pic_box{
+    display: flex;
+    justify-content: center;
+    height: 3.42rem;
+    background: url("../images/goods_ticket_bg.png") no-repeat center;
+    background-size: 6.5rem 2.9rem;
+    text-align: center;
+    border-bottom: 0.01rem solid #E3E3E3
+}
+.item_pail{
+    width: 0.77rem;
+    height: 1.48rem;
+    margin-top: 1.1rem;
+    margin-left: 0.9rem;
+}
+.item_text{
+    flex:2;
+    margin-left: 0.6rem;
+    margin-top: 0.3rem;
+}
+.item_scope{
+    flex:1;
+    margin-top:2.45rem;
+    margin-right: 0.9rem;
+    color: #ffffff;
+}
+.item_ticket_title{
+    margin-top: 0.7rem;
+    color: #e6d15e;
+    font-size: 0.6rem;
+}
+.item_ticket_subTitle{
+    color: #333333;
+    font-size: 0.3rem;
+}
+.item_detail_box{
+    height: 0.8rem;
+    line-height: 0.8rem;
+    padding: 0 0.2rem;
+}
+.item_price{
+    color:#FF4243;
+    composes:f34 from '../css/base.css';
+}
+.item_price_unit{
+    composes:f26 from '../css/base.css';
+}
+.item_phase{
+    display: inline-block;
+    margin: 0 0.2rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    width: 1.25rem;
+    text-align: center;
+    border: 0.01rem solid #999999;
+    border-radius: 0.05rem;
+    color: #999999;
+    composes:f24 from '../css/base.css';
+}
+.item_cart{
+    float: right;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-top: 0.21rem;
+}
+.footer{
+    position: fixed;
+    display: flex;
+    bottom:0;
+    width:100%;
+    height: 1rem;
+    background: #FFFFFF;
+    composes:f24 from '../css/base.css';
+}
+.serve{
+    flex:2.5;
+    display: flex;
+    border-top: 0.01rem solid #E3E3E3;
+}
+.service,
+.refer,
+.cart{
+    flex:1;
+    border-right: 0.01rem solid #E3E3E3;
+    composes:tc from '../css/base.css';
+}
+.service{
+    background:#FFF url('../../src/images/bottom-icon-4-n.png') no-repeat center 0.2rem;
+    -webkit-background-size:0.39rem 0.38rem;
+    background-size:0.39rem 0.38rem;
+    padding-top: 0.6rem;
+    composes: w tc from '../css/base.css';
+}
+.refer{
+    background:#FFF url('../../src/images/phone-02.png') no-repeat center 0.2rem;
+    -webkit-background-size:0.39rem 0.38rem;
+    background-size:0.39rem 0.38rem;
+    padding-top: 0.6rem;
+    composes: w tc from '../css/base.css';
+}
+.cart{
+    position: relative;
+    background:#FFF url('../../src/images/list_commom_btn_shopping-cart-.png') no-repeat center 0.2rem;
+    -webkit-background-size:0.44rem 0.37rem;
+    background-size:0.44rem 0.37rem;
+    padding-top: 0.6rem;
+    composes: w tc from '../css/base.css';
+}
+.cart_num{
+    display: inline-block;
+    position: absolute;
+    top: 0.1rem;
+    right: 0.45rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    width: 0.3rem;
+    background: #FF4242;
+    color:#FFFFFF;
+    -webkit-border-radius: 0.15rem;
+    -moz-border-radius: 0.15rem;
+    border-radius: 0.15rem;
+    composes:tc from '../css/base.css';
+}
+.settle{
+    flex:1;
+    background: red;
+    text-align: center;
+    line-height: 1rem;
+    color: #ffffff;
+    composes:f32 from '../css/base.css';
+}
+.shopping_cart{
+    position: fixed;
+    right: 0.3rem;
+    bottom: 0.9rem;
+    background: #FFFFFF;
+    border-radius: 50%;
+    border:0.01rem solid #E3E3E3;
+    height: 0.8rem;
+    width: 0.8rem;
+}
+.cart_pic{
+    height: 0.45rem;
+    width: 0.45rem;
+    margin: 0.2rem 0.15rem;
+}
+.cart_corner{
+    display: inline-block;
+    float: right;
+    margin-top: -1rem;
+    margin-right: -0.1rem;
+    height: 0.3rem;
+    width:0.3rem;
+    text-align: center;
+    line-height: 0.3rem;
+    border-radius: 50%;
+    background: #FF4243;
+    color: #ffffff;
+}

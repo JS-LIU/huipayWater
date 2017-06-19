@@ -1,0 +1,2 @@
+export const SELECTED_BUCKET = "SELECTED_BUCKET";
+export const CLEAR_SELECTED = "CLEAR_SELECTED";

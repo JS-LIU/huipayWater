@@ -1,0 +1,103 @@
+.cipblue {
+    color: #0b6afc;
+}
+.cfff {
+    color: #FFF;
+}
+.cred {
+    color: #EE304F;
+}
+.red {
+    background-color: #EE304F;
+}
+.orange {
+    background-color: #fd7d21;
+}
+.c000 {
+    color: #000;
+}
+.c333 {
+    color: #333333;
+}
+.map_title{
+    display: flex;
+    justify-content: center;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    background:#14abf0;
+    composes: cfff ;
+}
+.map_titleCity{
+    flex:1;
+    padding:0 0.15rem;
+    background: url("../images/arrow-down.png") no-repeat right center;
+    -webkit-background-size: 0.3rem;
+    background-size: 0.3rem;
+    composes: cfff ;
+    composes:tc from '../css/base.css';
+}
+.map_titleName{
+    flex:4;
+    composes:tc f32 from '../css/base.css';
+}
+.map_titleLocal{
+    flex:1;
+}
+.map_img{
+    height:0.45rem;
+    width:0.35rem;
+    margin-top: 18%;
+    margin-left: 36%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    background:#FFFFFF;
+}
+.goBack{
+    flex:1;
+    padding:0 0.2rem;
+    background: url("../images/arrow-left.png") no-repeat 0.2rem center;
+    -webkit-background-size: 0.3rem;
+    background-size: 0.3rem;
+    composes:tc from '../css/base.css';
+}
+.ticket_titleName{
+    flex:4;
+    margin-left: -0.6rem;
+    composes:tc f32 from '../css/base.css';
+}
+
+.station_title{
+    display: flex;
+    justify-content: center;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    background: #FFFFFF;
+}
+.station_titleCity{
+    flex:1;
+    padding:0 0.3rem;
+    background: url("../images/arrow-down.png") no-repeat 1.2rem center;
+    -webkit-background-size: 0.3rem;
+    background-size: 0.3rem;
+    composes: f26 from '../css/base.css';
+}
+.station_titleName{
+    flex: 4;
+    margin-left: -0.6rem;
+    color:#14abf0;
+    composes: f36 tc from '../css/base.css';
+}
+.station_titleLocal{
+    flex:1;
+}
+.station_img{
+    float: right;
+    height:0.45rem;
+    width:0.35rem;
+    margin-top: 0.21rem;
+    margin-right: 0.3rem;
+}

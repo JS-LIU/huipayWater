@@ -1,0 +1,178 @@
+.stationInfo{
+    composes:bgColor from '../css/base.css';
+}
+.infoModule{
+    margin-bottom: 0.3rem;
+}
+.stationPic{
+    height:5.6rem;
+    width:100%;
+}
+.stationTitle{
+    height: 0.94rem;
+    line-height: 0.94rem;
+    composes:f36 c333 pl30 pr30 bgColorF from '../css/base.css';
+}
+.titleName{
+    float: left;
+}
+.stationStar{
+    float: right;
+    composes:f30 from '../css/base.css';
+}
+.judgeStar{
+    width: 0.25rem;
+    margin-right: 0.1rem;
+}
+.infoItem{
+    height: 1rem;
+    line-height: 1rem;
+    padding-left: 0.85rem;
+    composes:f30 c666  pr30 bgColorF from '../css/base.css';
+}
+.quickMark{
+    background: #ffffff url("../../src/images/station-details_icon_qrcode.png") no-repeat 0.3rem center;
+    background-size: 0.35rem;
+    border-bottom: 0.01rem solid #EEEFF3;
+    composes:infoItem;
+}
+.infoLeft{
+    float: left;
+}
+.rightBtnBox{
+    float:right;
+}
+.rightBtn{
+    float: right;
+    margin-top: 0.35rem;
+    margin-left: 0.1rem;
+    height: 0.3rem;
+    width:0.18rem;
+}
+.address{
+    background: #ffffff url("../../src/images/station-details_icon_location.png") no-repeat 0.3rem center;
+    background-size: 0.35rem;
+    border-bottom: 0.01rem solid #EEEFF3;
+    composes:infoItem;
+}
+.telephone{
+    background: #ffffff url("../../src/images/station-details_icon_phone.png") no-repeat 0.3rem center;
+    background-size: 0.35rem;
+    border-bottom: 0.01rem solid #EEEFF3;
+    composes:infoItem;
+}
+.rightBtnPhone{
+    float: right;
+    margin-top: 0.35rem;
+    margin-left: 0.1rem;
+    height: 0.3rem;
+    width:0.32rem;
+}
+.subBranch{
+    background: #ffffff url("../../src/images/station-details_icon_branch.png") no-repeat 0.3rem center;
+    background-size: 0.35rem;
+    composes:infoItem;
+}
+.sentTime{
+    background: #ffffff url("../../src/images/station-details_icon_time.png") no-repeat 0.3rem center;
+    background-size: 0.35rem;
+    border-bottom: 0.01rem solid #EEEFF3;
+    composes:infoItem;
+}
+.sentRange{
+    background: #ffffff url("../../src/images/trumpet.png") no-repeat 0.3rem center;
+    background-size: 0.35rem;
+    composes:infoItem;
+}
+.abstract{
+    margin-bottom:0.3rem;
+    composes:bgColorF from '../css/base.css';
+}
+.headline{
+    height: 1rem;
+    line-height: 1rem;
+    border-bottom: 0.01rem solid #EEEFF3;
+    composes:f30 c333 pl30 from '../css/base.css';
+}
+.particulars{
+    height: 1.4rem;
+    line-height: 0.45rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    composes:f26 c999 pl30 pr30 pt30 from '../css/base.css';
+}
+.pullDown{
+    background: url("../../src/images/arrow-down.png") no-repeat center center;
+    background-size: 0.3rem;
+    height:0.6rem;
+}
+.productJudge{
+    flex:2;
+}
+.examine{
+    flex:1;
+    text-align: right;
+    margin-right: 0.3rem;
+    color: #999999;
+    composes:f26 from '../css/base.css';
+}
+.consume_judge{
+    margin-bottom: 0.3rem;
+}
+.more_right_btn{
+    float: right;
+    height: 0.25rem;
+    margin-top: 0.34rem;
+    margin-left: 0.1rem;
+}
+.proPromote{
+    display: flex;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    padding-left: 0.3rem;
+    composes:f32 bgColorF from '../css/base.css';
+}
+.storeBasic,
+.consumer{
+    display: flex;
+    padding:0 0.3rem;
+    border-top:0.01rem solid #E3E3E3;
+    composes:bgColorF from '../css/base.css';
+}
+.portrait{
+    height: 0.6rem;
+    margin:0.35rem 0;
+    border-radius: 0.3rem;
+}
+.userName{
+    margin:0.26rem 0 0.2rem 0.2rem;
+    width: 4rem;
+    composes:f28 c333 from '../css/base.css';
+}
+.degree{
+    composes:f26 from '../css/base.css';
+}
+.degree img{
+    width: 0.25rem;
+    margin-right: 0.1rem;
+}
+.judgeTime {
+    line-height: 1.3rem;
+    margin-left: 0.35rem;
+    color: #999999;
+    composes:f26 tc from '../css/base.css';
+}
+.judgeContent{
+    padding:0 0.3rem 0.2rem 0.3rem;
+    line-height: 0.5rem;
+    color: #777777;
+    composes:f26 bgColorF from '../css/base.css';
+}
+.judgeContent img{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top:0.3rem;
+    margin-right: 0.18rem;
+}

@@ -1,0 +1,188 @@
+.color3{
+    color: #333333;
+}
+.bgColor{
+    background: #EEEFF3;
+}
+.bgColorF{
+    background: #FFFFFF;
+}
+.stationCertain{
+    padding-bottom: 1.2rem;
+    composes:bgColor;
+}
+.waterStore{
+    composes:bgColorF;
+}
+.storeBasic{
+    display: flex;
+    padding:0 0.3rem;
+    border-bottom:0.01rem solid #E3E3E3;
+    composes:bgColorF;
+}
+.storePic{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+.storePic{
+    margin: 0.3rem 0;
+}
+.storeName{
+    margin:0.32rem 0 0.2rem 0.2rem;
+    width: 5.1rem;
+    line-height:0.5rem;
+    composes:color3;
+    composes:f30 from '../css/base.css';
+}
+.degree{
+    composes:f26 from '../css/base.css';
+}
+.judgeStar{
+    width: 0.25rem;
+    margin-right: 0.1rem;
+}
+.rightBtnBox{
+    float:right;
+}
+.rightBtn{
+    float: right;
+    height: 0.3rem;
+    width:0.18rem;
+}
+.judgeNum{
+    display: inline-block;
+    float: right;
+    margin-top: -0.05rem;
+    width: 3rem;
+}
+.location{
+    width:90%;
+    background: url("../../src/images/address-05.png") no-repeat left center;
+    background-size: 0.3rem;
+    composes:f26 pl40 c999 from '../css/base.css';
+}
+.distance{
+    float: right;
+}
+.storeDetail{
+    display: flex;
+    padding: 0.2rem 0;
+    border-bottom: 0.01rem solid #e3e3e3;
+}
+.chunk{
+    flex:1;
+    composes:tc from '../css/base.css';
+}
+.chunk p{
+    width: 100%;
+}
+.amount{
+    composes:color3;
+    composes:f32 from '../css/base.css';
+}
+.describe{
+    margin-top: 0.12rem;
+    color: #999999;
+    composes:f26 from '../css/base.css';
+}
+.discount{
+    display: flex;
+    padding: 0.2rem 0 0.2rem 0.2rem;
+}
+.discount_coupon{
+    width: 2.22rem;
+    height:1.15rem;
+    margin-right:0.22rem;
+    background: url("../../src/images/fullcut_bg.png") no-repeat center center;
+    background-size: 2.22rem 1.15rem;
+}
+.saleNum{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.44rem;
+    composes:tc from '../css/base.css';
+}
+.saleUnit{
+    font-size: 0.28rem;
+}
+.saleDescribe{
+    color: #ffffff;
+    font-size: 0.22rem;
+    line-height: 0.5rem;
+    composes:tc from '../css/base.css';
+}
+.footer{
+    position: fixed;
+    display: flex;
+    bottom:0;
+    width:100%;
+    height: 1rem;
+    background: #FFFFFF;
+    composes:f24 from '../css/base.css';
+}
+.serve{
+    flex:3;
+    display: flex;
+    border-top: 0.01rem solid #E3E3E3;
+}
+.servicer,
+.refer,
+.cart{
+    flex:1;
+    border-right: 0.01rem solid #E3E3E3;
+    composes:color3;
+    composes:tc f20 from '../css/base.css';
+}
+.servicer{
+    background:#FFF url('../../src/images/bottom_btn_service.png') no-repeat center 0.2rem;
+    -webkit-background-size:0.41rem 0.38rem;
+    background-size:0.41rem 0.38rem;
+    padding-top: 0.6rem;
+    composes: w tc from '../css/base.css';
+}
+.refer{
+    background:#FFF url('../../src/images/bottom_btn_collection_n.png') no-repeat center 0.2rem;
+    -webkit-background-size:0.37rem 0.35rem;
+    background-size:0.37rem 0.35rem;
+    padding-top: 0.6rem;
+    composes: w tc from '../css/base.css';
+}
+.cart{
+    position: relative;
+    background:#FFF url('../../src/images/tab_btn_shoppingcart_n.png') no-repeat center 0.2rem;
+    -webkit-background-size:0.48rem 0.48rem;
+    background-size:0.48rem 0.48rem;
+    padding-top: 0.6rem;
+    composes: w tc from '../css/base.css';
+}
+.cart_num{
+    display: inline-block;
+    position: absolute;
+    top: 0.1rem;
+    right: 0.48rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    width: 0.3rem;
+    background: #FF4242;
+    color:#FFFFFF;
+    -webkit-border-radius: 0.15rem;
+    -moz-border-radius: 0.15rem;
+    border-radius: 0.15rem;
+    composes:tc from '../css/base.css';
+}
+.settle{
+    flex:1.2;
+    display:flex;
+    background: red;
+    text-align: center;
+    line-height: 1rem;
+    color: #ffffff;
+    composes:f34 from '../css/base.css';
+}
+.addCart{
+    flex:1;
+    background: #fd7d21;
+}
+.purchase{
+    flex:1;
+}

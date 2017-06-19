@@ -1,0 +1,80 @@
+.cipblue {
+    color: #0b6afc;
+}
+
+.cfff {
+    color: #FFF;
+}
+
+.cred {
+    color: #EE304F;
+}
+
+.red {
+    background-color: #EE304F;
+}
+
+.orange {
+    background-color: #fd7d21;
+}
+
+.c000 {
+    color: #000;
+}
+
+.c333 {
+    color: #333333;
+}
+.map{
+    display: flex;
+    flex-direction:column;
+    position:fixed;
+    top:0;
+    bottom:1.2rem;
+    width:100%;
+    background: #EEEFF3;
+}
+
+.mapBox{
+    height: 9rem;
+    position: relative;
+}
+.mapMark{
+    position: absolute;
+    top:calc(50% - 1.35rem);
+    left:calc(50% - 0.3rem);
+    margin: 0 auto;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: url(../images/myLocation-marker.png) no-repeat center;
+    background-size: contain;
+}
+.mapDetail{
+    padding-left:0.8rem;
+    bottom: 0.32rem;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    width:100%;
+    background: #FFF url(../images/myLocation-marker.png) no-repeat 0.3rem center;
+    background-size: 0.34rem;
+}
+.mapDetail_address{
+    width:80%;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.orderBtn{
+    position: fixed;
+    bottom: 1.2rem;
+    width:100%;
+    height: 1.5rem;
+    line-height: 0.88rem;
+}
+.orderBtn_order{
+    height:0.88rem;
+    margin:0.3rem 0.36rem;
+    background: #14abf0;
+    composes:cfff;
+    composes:tc f32 from '../css/base.css';
+}
