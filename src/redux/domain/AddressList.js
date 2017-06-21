@@ -19,15 +19,18 @@ let converseAddressList ={
 
 
 let addressListOperator = {
-    findSelected:function(list){
-        function isSelected(item){
-            if(item.selected){
-                return item;
-            }
-        }
 
-        return list.find(isSelected);
+    isSelected:function(item){
+        if(item.selected){
+            return item;
+        }
     },
+    isDefault:function(item){
+        if(item.default){
+            return item;
+        }
+    },
+
     changeSelectedState:function(list,selectedAddressInfo){
 
         //  如果当前选择地址未被选中
@@ -57,7 +60,10 @@ class AddressList{
 
     }
     findSelected(){
-        return addressListOperator.findSelected(this.addressListInfo.list);
+        return this.addressListInfo.find(addressListOperator.isSelected);
+    }
+    findDefault(){
+        return this.addressListInfo.find(addressListOperator.isDefault);
     }
 }
 module.exports = AddressList;

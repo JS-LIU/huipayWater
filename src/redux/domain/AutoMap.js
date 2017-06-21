@@ -6,8 +6,12 @@ class AutoMap{
 
     }
     show(x,y){
-        console.log("AutoMap开始绘制地图---中心点坐标为【x,y】");
+        console.log("AutoMap开始绘制地图---中心点坐标为【x,y】",[x,y]);
     }
+    currentLocationInfo(){
+
+    }
+
 }
 
 
