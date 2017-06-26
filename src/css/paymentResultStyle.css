@@ -1,0 +1,26 @@
+.payResult{
+    min-height: 13.03rem;
+    composes:bgColor pt30 from '../css/base.css';
+}
+.resultCondition{
+    height: 1.4rem;
+    composes:bgColorF pt30 pb20 from '../css/base.css';
+}
+.conditionPic{
+    display: block;
+    margin: auto;
+    width:0.6rem;
+    height: 0.6rem;
+}
+.textDetail{
+    color: #4dc0ff;
+    composes:f36 tc mt24 from '../css/base.css';
+}
+.tradeInfo{
+    padding-top: 0.36rem;
+    composes:bgColorF mt30 f30 c333 pb20 from '../css/base.css';
+}
+.infoItem{
+    margin-bottom: 0.25rem;
+    composes:pl40 from '../css/base.css';
+}

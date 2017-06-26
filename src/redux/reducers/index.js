@@ -5,7 +5,7 @@ import { routerReducer as routing } from 'react-router-redux';
 
 import {map} from './map';
 import {water} from './water';
-import {order} from './order';
+import {buyWater} from './buyWater';
 import {station} from './station';
 import {waterTicket} from './waterTicket';
 import {waterDetail} from './waterDetail';
@@ -15,10 +15,12 @@ import {stationCertain} from './stationCertain';
 import {userInfo} from './userInfo';
 import {allIndents} from './allIndents';
 import {address} from './address';
+import {shoppingCart} from './shoppingCart';
+import {showDialog} from './showDialog';
 
 const rootReducer = combineReducers({
     map,
-    order,
+    buyWater,
     station,
     water,
     choose,
@@ -27,8 +29,10 @@ const rootReducer = combineReducers({
     waterDetail,
     historyUrls,
     allIndents,
+    showDialog,
     stationCertain,
     address,
+    shoppingCart,
     routing
 });
 

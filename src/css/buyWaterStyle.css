@@ -14,64 +14,56 @@
     width: 100%;
     background: #EEEFF3;
 }
-.order_title{
+.headLocation{
     display: flex;
-    justify-content: center;
-    height: 0.88rem;
-    line-height: 0.88rem;
-    background: #FFFFFF;
+    height:0.84rem;
+    line-height: 0.84rem;
+    composes:pl24 pr24 from '../css/base.css';
 }
 .order_titleCity{
-    flex:1;
-    padding:0 0.3rem;
-    background: url("../images/arrow-down.png") no-repeat 1.2rem center;
-    -webkit-background-size: 0.3rem;
-    background-size: 0.3rem;
+    flex:1.3;
+    display: flex;
+    align-items:center;
     composes: f26 from '../css/base.css';
 }
-.order_titleName{
-    flex: 4;
-    margin-left: -0.6rem;
-    composes: f36 tc from '../css/base.css';
-}
-.order_titleLocal{
-    flex:1;
-}
-.order_img{
-    height:0.54rem;
-    width:0.54rem;
-    float: right;
-    margin-top: 0.15rem;
-    margin-right: 0.3rem;
+.triangle{
+    display: inline-block;
+    margin-left: 0.1rem;
+    margin-top: 0.05rem;
+    height:0;
+    width: 0;
+    border-color: #999 #EEEFF3 #EEEFF3 #EEEFF3;
+    border-style:solid;
+    border-width:0.06rem 0.06rem 0 0.06rem;
+
 }
 .mapBox{
     height:0;
     position: relative;
 }
 .sentAddress{
+    flex:4;
+    display: flex;
     position: relative;
-    height: 0.84rem;
-    line-height:0.84rem;
-    padding-left: 0.7rem;
-    background: url(../images/address-05.png) no-repeat 0.3rem center;
+    /*background: url(../images/address-05.png) no-repeat left center;*/
     background-size: 0.3rem;
     color: #333333;
-    composes:f30 from '../css/base.css';
+    composes:f28 from '../css/base.css';
 }
 .sentAddress_tip{
-    display: inline-block;
-    float: left;
+    flex:1;
 }
 .sentAddress_detail{
-    display: inline-block;
-    width:66%;
-    white-space:nowrap;
+    flex:2;
     overflow: hidden;
 }
-.btn_right{
-    position: absolute;
-    top: 0.27rem;
-    right:0.3rem;
+.more_right_btn{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.btn_pic{
     height:0.3rem;
     width:0.18rem;
 }

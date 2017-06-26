@@ -1,0 +1,21 @@
+.confirmBuy{
+    min-height: 13.03rem;
+    composes:bgColor f30 c333 pt30 from '../css/base.css';
+}
+.actually{
+    display: flex;
+    justify-content: space-between;
+    composes:pl24 pr24 from '../css/base.css';
+}
+.amount{
+    color:#FF4243;
+}
+.purchase{
+    background: #4dc0ff;
+    color: #ffffff;
+    height: 1rem;
+    line-height: 1rem;
+    border-radius: 0.1rem;
+    margin:1.2rem 0.36rem 0 0.36rem;
+    composes:tc from '../css/base.css';
+}

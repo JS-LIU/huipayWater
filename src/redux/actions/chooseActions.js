@@ -1,4 +1,4 @@
-import {SELECTED_BUCKET,CLEAR_SELECTED} from './chooseActionKeys';
+import {SELECTED_BUCKET,CLEAR_BUCKET_SELECTED,SELECTED_COMBO,CLEAR_COMBO_SELECTED} from './chooseActionKeys';
 export const chooseActions= {
     selectedBucket:(index)=>{
         return {
@@ -6,9 +6,20 @@ export const chooseActions= {
             index
         }
     },
-    clearSelected:()=>{
+    clearBucketSelected:()=>{
         return {
-            type:CLEAR_SELECTED
+            type:CLEAR_BUCKET_SELECTED
+        }
+    },
+    selectedCombo:(index)=>{
+        return {
+            type:SELECTED_COMBO,
+            index
+        }
+    },
+    clearComboSelected:()=>{
+        return {
+            type:CLEAR_COMBO_SELECTED
         }
     },
 };

@@ -1,0 +1,66 @@
+.dialog_box{
+    position: fixed;
+    bottom: 0;
+    z-index: 11;
+    composes: bgColorF from '../css/base.css';
+}
+
+.delete_dialog_body{
+    position:fixed;
+    bottom:1.5rem;
+    margin:0 calc((100% - 6.9rem)/2);
+    width: 6.9rem;
+    height:1.94rem;
+    background:#FFF;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+}
+.dialog_body_text{
+    height: 0.94rem;
+    line-height: 0.94rem;
+    border-bottom: 0.01rem solid #EEEFF3;
+    composes:f28 c666 tc from '../css/base.css';
+}
+.dialog_body_operate{
+    height: 1rem;
+    line-height: 1rem;
+    color: #FF4243;
+    composes:f36  tc from '../css/base.css';
+}
+.dialog_footer{
+    position:fixed;
+    bottom: 0.2rem;
+    margin:0 calc((100% - 6.9rem)/2);
+    height: 1.16rem;
+    line-height: 1.16rem;
+    width: 6.9rem;
+    color: #4dc0ff;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+    composes:f36 tc bgColorF from '../css/base.css';
+}
+.new_address_dialog_body{
+    position:fixed;
+    bottom:calc((100% - 2.34rem)/2);
+    margin:0 calc((100% - 5.28rem)/2);
+    width: 5.28rem;
+    height:2.34rem;
+    background:#FFF;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+}
+.new_address_body_text{
+    height: 1.36rem;
+    line-height:1.36rem;
+    border-bottom: 0.01rem solid #EEEFF3;
+    composes:f36 c333 tc from '../css/base.css';
+}
+.new_address_body_operate{
+    height: 0.98rem;
+    line-height:0.98rem;
+    color: #4dc0ff;
+    composes:f36  tc from '../css/base.css';
+}

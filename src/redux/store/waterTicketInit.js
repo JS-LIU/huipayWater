@@ -56,5 +56,5 @@ export const waterTicketInit ={
             title:"品牌",
             selected:false
         },
-    ]
+    ],
 };

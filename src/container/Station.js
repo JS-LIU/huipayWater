@@ -2,7 +2,6 @@ let React = require('react');
 let { bindActionCreators } = require('redux');
 let { Link } = require('react-router');
 let { connect } = require('react-redux');
-let {Header,StationHeader} = require('../components/Header')
 let _h = require('../Util/HB');
 
 import {historyUrlsActions} from '../redux/actions/historyUrlsActions';
@@ -16,13 +15,19 @@ const Station = React.createClass({
     render: function () {
         return (
             <div className={stationStyle.station_box}>
-                <Header map={this.props.map}>
-                    <StationHeader city={this.props.map.city} headData={{name:'水站',img:'src/images/address-05.png'}}/>
-                </Header>
-                <Link to="/Address" className={stationStyle.sentAddress}>
-                    <span className={stationStyle.sentAddress_tip}>收货地址：</span><span className={stationStyle.sentAddress_detail}>{this.props.map.address}</span>
-                    <img src="src/images/btn_right_arrow@2x.png" className={stationStyle.btn_right}/>
-                </Link>
+                <div className={stationStyle.headLocation}>
+                    <Link to="/" className={stationStyle.order_titleCity}>
+                        <p id="city">{this.props.map.city}</p>
+                        <span className={stationStyle.triangle}></span>
+                    </Link>
+                    <Link to="/AddressList" className={stationStyle.sentAddress}>
+                        <p className={stationStyle.sentAddress_tip}>收货地址：</p>
+                        <p className={stationStyle.sentAddress_detail} id="mark">{this.props.map.address}</p>
+                    </Link>
+                    <p className={stationStyle.more_right_btn}>
+                        <img src="src/images/station-details_icon_location.png" className={stationStyle.btn_pic}/>
+                    </p>
+                </div>
                 <StationList
                     station={this.props.station}/>
             </div>

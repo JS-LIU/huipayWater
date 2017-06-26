@@ -4,7 +4,7 @@ let { Link } = require('react-router');
 let { connect } = require('react-redux');
 let Carousel = require('../components/Carousel');
 let _h = require('../Util/HB');
-let ProductList = require('../components/ProductList');
+let {ProductList,ProductRowList} = require('../components/ProductList');
 
 import {historyUrlsActions} from '../redux/actions/historyUrlsActions';
 import {waterDetailActions} from '../redux/actions/waterDetailActions';
@@ -111,8 +111,9 @@ const ProductShow = React.createClass({
                 <ProductJudge/>
                 <WaterStore/>
                 <div className={waterDetailStyle.recommend}>为你推荐</div>
-                <ProductList
-                    water={this.props.water}/>
+                <ProductList water={this.props.water}>
+                    <ProductRowList  water={this.props.water}/>
+                </ProductList>
                 <div className={waterDetailStyle.pullUp}>
                     上拉查看详情
                 </div>
@@ -245,7 +246,7 @@ const ProductDetail = React.createClass({
     render: function () {
         return (
             <div>
-
+                的故事发生地方
             </div>
         )
     }

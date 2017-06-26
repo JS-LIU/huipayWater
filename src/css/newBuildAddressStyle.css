@@ -1,0 +1,94 @@
+.bb{
+    border-top: 0.01rem solid #EEEFF3;
+}
+.newBuildAddress{
+    min-height: 13.03rem;
+    composes:bgColor pt30 from '../css/base.css';
+}
+.connect{
+    height: 1.83rem;
+}
+.consignee{
+    float: left;
+    width: 5.66rem;
+    composes:bgColorF f30 c333 from '../css/base.css';
+}
+.consignee_name{
+    height:0.9rem;
+    line-height: 0.9rem;
+    composes:bb;
+    composes:pl30 from '../css/base.css';
+}
+.consignee_phone{
+    height:0.9rem;
+    line-height: 0.9rem;
+    composes:bb;
+    composes:pl30 from '../css/base.css';
+}
+.choose_linkman{
+    float: left;
+    height:0.72rem;
+    width: 1.8rem;
+    border:0.01rem solid #EEEFF3;
+    background: #ffffff url("../../src/images/address_btn_add@2x.png") no-repeat center 0.4rem;
+    background-size: 0.44rem 0.46rem;
+    padding-top: 1.1rem;
+    composes:f26 c333 tc from '../css/base.css'
+}
+.consignee_input{
+    float: right;
+    margin:0.15rem 0.5rem 0.15rem 0;
+    width: 3rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    outline: none;
+}
+.area{
+    height: 0.9rem;
+    line-height: 0.9rem;
+    composes:bb;
+    composes:pl30 pr30 f30 c333 bgColorF from '../css/base.css';
+}
+.areaDetail{
+    float: right;
+    height: 0.9rem;
+    line-height:0.9rem;
+    width: 5.05rem;
+    background: url("../../src/images/btn_right_arrow@2x.png") no-repeat right center;
+    background-size: 0.18rem 0.3rem;
+}
+.addressLabel{
+    display: flex;
+    align-items: center;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    composes:bb;
+    composes:pl30 pr30 f30 c333 bgColorF from '../css/base.css';
+}
+.label_pic_n{
+    display: flex;
+    align-items: center;
+    margin-left: 0.2rem;
+}
+.labelPic{
+    width: 1.3rem;
+    height: 0.5rem;
+}
+.saveNewAddress{
+    margin:1rem auto;
+    border-radius: 0.1rem;
+    width: 6.9rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    color: #ffffff;
+    background: #4dc0ff;
+    composes:tc f36 from '../css/base.css';
+}
+.dialog_mask{
+    position: fixed;
+    z-index: 9;
+    background: #000;
+    opacity: 0.3;
+    bottom: 0;
+    composes: w h from '../css/base.css';
+}

@@ -30,3 +30,31 @@
     background:url("../../src/images/btn_right_arrow@2x.png") no-repeat right center;
     background-size: 0.18rem 0.3rem;
 }
+.payWayList{
+    composes:bgColorF mt10 from '../css/base.css';
+}
+.way_list_nodes{
+    display: flex;
+    align-items: center;
+    border-top: 0.01rem solid #EEEFF3;
+    padding-left: 0.36rem;
+    composes:f30 c333 pr30 pt20 pb20 from '../css/base.css';
+}
+.way_pic{
+    height: 1rem;
+    width: 1rem;
+
+}
+.wayDetail{
+    margin-left: 0.3rem;
+    width: 5rem;
+}
+.subTitle{
+    composes:f22 c999 from '../css/base.css';
+}
+.choosePic{
+    margin-left: 0.1rem;
+    margin-top:0.2rem;
+    height: 0.34rem;
+    width:0.34rem;
+}

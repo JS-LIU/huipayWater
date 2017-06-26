@@ -1,6 +1,6 @@
 .my{
-    height: 12rem;
-    composes:bgColor pt30 from '../css/base.css';
+    height: 12.3rem;
+    composes:bgColor from '../css/base.css';
 }
 .my_header{
     display: flex;

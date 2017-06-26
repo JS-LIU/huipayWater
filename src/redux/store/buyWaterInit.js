@@ -1,4 +1,4 @@
-export const orderInit ={
+export const buyWaterInit ={
     productList:[
         {
             pic:"",

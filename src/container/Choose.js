@@ -13,7 +13,7 @@ const Choose = React.createClass({
     },
     chooseBucket:function(index){
         return()=>{
-            this.props.chooseActionKeys.clearSelected();
+            this.props.chooseActionKeys.clearBucketSelected();
             this.props.chooseActionKeys.selectedBucket(index);
         }
     },

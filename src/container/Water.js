@@ -43,9 +43,9 @@ let WaterHeader = React.createClass({
     render: function () {
         return (
             <div className={waterStyle.waterTitle}>
-                {/*<Link to="/Order">*/}
-                    {/*<p className={waterStyle.waterReturn}>订水</p>*/}
-                {/*</Link>*/}
+                <Link to="/Order">
+                    <p className={waterStyle.waterReturn}>返回</p>
+                </Link>
                 <p className={waterStyle.search_box}>
                     <img src="src/images/search-box_btn_search.png" alt="" className={waterStyle.search_btn}/>
                     <input type="string" className={waterStyle.water_search} placeholder="搜索商品"/>

@@ -1,2 +1,67 @@
 .addressManage{
+    min-height: 13.33rem;
+    composes:bgColor f24 c777 from '../css/base.css';
+}
+.addressNode{
+    composes:bgColorF pt30 pl30 pr30 mb30 pb10 from '../css/base.css';
+}
+.receiver{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.1rem;
+    composes:f30 c333 from '../css/base.css';
+}
+.telephone{
+    margin-left: 0.5rem;
+}
+.labelPic{
+    width: 0.8rem;
+    margin-left:0.3rem;
+}
+.location{
+    margin-bottom: 0.1rem;
+}
+.operate{
+    display:flex;
+    justify-content: space-between;
+    height: 0.6rem;
+    line-height: 0.6rem;
+}
+.defaultPic{
+    height: 0.34rem;
+    width: 0.34rem;
+    margin-top: 0.1rem;
+}
+.operate_default{
+    float: right;
+    margin-left: 0.3rem;
+}
+.operate_edit{
+    background: url("../../src/images/address_btn_edit@2x.png") no-repeat left center;
+    background-size: 0.35rem;
+    padding-left: 0.5rem;
+}
+.operate_delete{
+    background: url("../../src/images/address_btn_delete@2x.png") no-repeat left center;
+    background-size: 0.35rem;
+    padding-left: 0.45rem;
+    margin-left: 0.38rem;
+}
+.newBuiltAddress{
+    margin:1rem auto;
+    border-radius: 0.1rem;
+    width: 6.9rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    color: #ffffff;
+    background: #4dc0ff;
+    composes:tc f36 from '../css/base.css';
+}
+.dialog_mask{
+    position: fixed;
+    z-index: 9;
+    background: #000;
+    opacity: 0.3;
+    bottom: 0;
+    composes: w h from '../css/base.css';
 }

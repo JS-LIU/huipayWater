@@ -1,0 +1,152 @@
+.bb{
+    border-bottom: 0.01rem solid #EEEFF3;
+}
+.confirmIndent{
+    min-height: 13rem;
+    composes:bgColor pt30 f30 c333 from '../css/base.css';
+}
+.delivery_message{
+    background: #ffffff url("../../src/images/line.png") no-repeat center bottom;
+    background-size: 7.5rem 0.04rem;
+    composes: pt30 from '../css/base.css';
+}
+.delivery_person{
+    margin-left: 0.7rem;
+    composes:pr30 from '../css/base.css';
+}
+.consignee{
+    display: inline-block;
+    width: 1.5rem;
+}
+.connect{
+    float: right;
+}
+.delivery_address{
+    height: 1rem;
+    background: url("../../src/images/address-05.png") no-repeat left 0.05rem;
+    background-size: 0.3rem;
+    composes:ml30 mt20 pl40 from '../css/base.css';
+}
+.delivery_address span{
+    display: inline-block;
+    float: left;
+    height:1rem;
+}
+.address{
+    width:73%;
+    composes:f26 from '../css/base.css';
+}
+.delivery_time{
+    display: flex;
+    justify-content: space-between;
+    height:0.9rem;
+    line-height:0.9rem;
+    composes:bgColorF f30 c777 pl30 pr30 mt30 from  '../css/base.css';
+}
+.exactTime{
+    background: url("../../src/images/btn_right_arrow@2x.png") no-repeat right center;
+    background-size:0.18rem 0.3rem;
+    composes:f26 c333 pr30 from '../css/base.css';
+}
+.indent_store{
+    composes:bgColorF f28 c777 mt30 from '../css/base.css'
+}
+.store_header{
+    height:0.84rem;
+    line-height: 0.84rem;
+    padding-left:0.7rem;
+    background: url("../../src/images/shoppingcart_icon_station.png") no-repeat 0.3rem center;
+    background-size: 0.3rem;
+    composes:bb;
+    composes:f30 from '../css/base.css';
+}
+.right_more{
+    float: right;
+    margin-right: 0.3rem;
+    margin-top:0.33rem;
+    height: 0.3rem;
+    width: 0.18rem;
+}
+.productNodes{
+    display: flex;
+    align-items: center;
+    composes:bb;
+}
+.product_pic{
+    display: flex;
+    align-items: center;
+    height:1.4rem;
+    width: 1.4rem;
+    margin: 0.2rem 0.3rem;
+    border:0.01rem solid #eee;
+}
+.product_detail{
+    margin-top: 0.1rem;
+    margin-left: -0.1rem;
+    line-height: 0.4rem;
+    composes:f26 c333 from '../css/base.css';
+}
+.product_name{
+    composes:f30 from '../css/base.css';
+}
+.product_volume{
+    composes:c999 from '../css/base.css';
+}
+.product_sale{
+    composes:f30 from '../css/base.css';
+}
+.charge{
+    display: flex;
+    justify-content:space-between;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    composes:bb;
+    composes:pl30 pr30 c333 from '../css/base.css';
+}
+.charge_title{
+    composes:c777 from '../css/base.css';
+}
+.purpose{
+    background: url("../../src/images/btn_right_arrow@2x.png") no-repeat right center;
+    background-size: 0.18rem 0.3rem;
+    padding-right: 0.3rem;
+}
+.cost{
+    height: 0.7rem;
+    line-height: 0.7rem;
+    composes:pl30 pr30 c333 from '../css/base.css';
+}
+.cost_descript{
+    float: right;
+}
+.cost_unit{
+    color:#FF4243;
+    composes:f24 from '../css/base.css';
+}
+.const_money{
+    color:#FF4243;
+    composes:f30 from '../css/base.css';
+}
+.confirmFooter{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    bottom:0;
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    composes:bgColorF pl30 from '../css/base.css';
+}
+.statistics{
+    composes:f28 from '../css/base.css';
+}
+.payable{
+    margin-left:0.3rem;
+}
+.submitOrder{
+    width: 2rem;
+    background: #FF4243;
+    color: #ffffff;
+    composes:mr30 tc from '../css/base.css';
+}

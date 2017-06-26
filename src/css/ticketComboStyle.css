@@ -1,0 +1,23 @@
+.ticketCombo{
+    min-height: 12.93rem;
+    padding-top: 0.4rem;
+    composes:bgColor from '../css/base.css';
+}
+.comboTitle{
+    composes:f30 c777 pl30 from '../css/base.css';
+}
+.comboList{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.15rem;
+    padding: 0.4rem 0 0.2rem 0.3rem;
+    composes:bgColorF f30 c333 from '../css/base.css';
+}
+.comboNode{
+    margin:0 0.35rem 0.2rem 0;
+    height: 0.75rem;
+    line-height: 0.75rem;
+    width: 3.2rem;
+    border:0.01rem solid #EEEFF3;
+    composes:tc from '../css/base.css';
+}

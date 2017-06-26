@@ -2,7 +2,6 @@ let React = require('react');
 let { bindActionCreators } = require('redux');
 let { Link } = require('react-router');
 let { connect } = require('react-redux');
-let {TicketHeader}  = require('../components/Header');
 let _h = require('../Util/HB');
 
 let {waterTicketActions} = require('../redux/actions/waterTicketActions');
@@ -11,13 +10,11 @@ let waterTicketStyle = require('../css/waterTicketStyle.css');
 const WaterTicket = React.createClass({
     componentDidMount:function(){
         _h.ui.scrollToTheBottom(()=>{
-
         });
     },
     render: function () {
         return (
             <div className={waterTicketStyle.bgColor}>
-                <TicketHeader/>
                 <WaterTicketList
                     waterTicket={this.props.waterTicket}
                     waterTicketActionKeys={this.props.waterTicketActionKeys}/>

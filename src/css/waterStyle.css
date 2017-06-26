@@ -13,19 +13,19 @@
     line-height: 0.88rem;
 }
 .waterReturn{
-    padding-left:0.5rem;
-    margin-right: 0.24rem;
-    background: url("../images/arrow-left.png") no-repeat 0.2rem center;
-    -webkit-background-size: 0.3rem;
-    background-size: 0.3rem;
+    padding-left:0.25rem;
+    margin-right: 0.3rem;
+    /*background: url("../images/arrow-left.png") no-repeat 0.2rem center;*/
+    /*-webkit-background-size: 0.3rem;*/
+    /*background-size: 0.3rem;*/
     color: #777777;
-    composes:f30  from '../css/base.css';
+    composes:f26  from '../css/base.css';
 }
 .search_box{
     -webkit-border-radius: 0.29rem;
     -moz-border-radius: 0.29rem;
     border-radius: 0.29rem;
-    width: 4.78rem;
+    width: 5.1rem;
     height: 0.6rem;
     line-height: 0.6rem;
     padding-left: 0.32rem;
@@ -44,7 +44,7 @@
     -moz-border-radius: 0.29rem;
     border-radius: 0.29rem;
     outline:none;
-    width: 4.2rem;
+    width: 4.52rem;
     height: 0.6rem;
     line-height: 0.6rem;
     margin-left: 0.14rem;
