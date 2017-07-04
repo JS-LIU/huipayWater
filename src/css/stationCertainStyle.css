@@ -134,16 +134,16 @@
     composes:tc f20 from '../css/base.css';
 }
 .servicer{
-    background:#FFF url('../../src/images/bottom_btn_service.png') no-repeat center 0.2rem;
-    -webkit-background-size:0.41rem 0.38rem;
+    background:#FFF url('../../src/images/bottom_btn_type.png') no-repeat center 0.2rem;
+    -webkit-background-size:0.36rem 0.36rem;
     background-size:0.41rem 0.38rem;
     padding-top: 0.6rem;
     composes: w tc from '../css/base.css';
 }
 .refer{
-    background:#FFF url('../../src/images/bottom_btn_collection_n.png') no-repeat center 0.2rem;
-    -webkit-background-size:0.37rem 0.35rem;
-    background-size:0.37rem 0.35rem;
+    background:#FFF url('../../src/images/bottom_btn_service.png') no-repeat center 0.2rem;
+    -webkit-background-size:0.41rem 0.38rem;
+    background-size:0.36rem 0.36rem;
     padding-top: 0.6rem;
     composes: w tc from '../css/base.css';
 }

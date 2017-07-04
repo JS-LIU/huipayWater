@@ -13,6 +13,7 @@ const PaymentResult = React.createClass({
     render: function () {
         return (
             <div className={paymentResultStyle.payResult}>
+                <div className={paymentResultStyle.title}>支付结果</div>
                 <div className={paymentResultStyle.resultCondition}>
                     <img src="src/images/shoppingcart_choose_s.png" className={paymentResultStyle.conditionPic}/>
                     <p className={paymentResultStyle.textDetail}>支付成功 !</p>

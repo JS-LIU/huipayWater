@@ -15,7 +15,6 @@ let Footer = React.createClass({
             if(footerData[i].url == pathName){
                 footerData[i].isChecked = true;
             }
-
         }
 
         this.setState(footerData);

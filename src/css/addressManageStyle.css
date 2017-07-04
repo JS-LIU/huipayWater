@@ -2,6 +2,12 @@
     min-height: 13.33rem;
     composes:bgColor f24 c777 from '../css/base.css';
 }
+.title{
+    height: 0.88rem;
+    line-height: 0.88rem;
+    margin-bottom: 0.03rem;
+    composes:bgColorF tc f32 from '../css/base.css';
+}
 .addressNode{
     composes:bgColorF pt30 pl30 pr30 mb30 pb10 from '../css/base.css';
 }

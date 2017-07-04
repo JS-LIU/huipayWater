@@ -101,8 +101,8 @@ const Footer = React.createClass({
         return (
             <div className={stationCertainStyle.footer}>
                 <div className={stationCertainStyle.serve}>
-                    <div className={stationCertainStyle.servicer}>客服</div>
-                    <div className={stationCertainStyle.refer}>收藏</div>
+                    <div className={stationCertainStyle.servicer}>分类</div>
+                    <div className={stationCertainStyle.refer}>客服</div>
                     <div className={stationCertainStyle.cart}>
                         <span className={stationCertainStyle.cart_num}>7</span>
                         <p>购物车</p>

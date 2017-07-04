@@ -72,6 +72,6 @@ const orderBgStyle = function(icon){
 const restBgStyle = function(icon){
     return {
         background:'url('+icon+') no-repeat left center',
-        backgroundSize:"0.4rem 0.4rem"
+        backgroundSize:"0.4rem auto"
     }
 };

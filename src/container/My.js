@@ -48,7 +48,7 @@ const My = React.createClass({
                         <p className={myStyle.title_text}>我的订单</p>
                         <p className={myStyle.check_more}>
                             <Link to="/AllIndents">
-                            查看更多
+                            查看全部
                             </Link>
                         </p>
                     </div>
@@ -73,7 +73,7 @@ const My = React.createClass({
                 <RestList itemList={[{
                     name:"我要开店",
                     url:'',
-                    icon:'src/images/me_icon_order.png'
+                    icon:'src/images/me_icon_open_station.png'
                 }, {
                     name:'我的收藏',
                     url:'',

@@ -15,6 +15,7 @@ const NewBuildAddress = React.createClass({
     render: function () {
         return (
             <div className={newBuildAddressStyle.newBuildAddress}>
+                <div className={newBuildAddressStyle.title}>新增地址</div>
                 <div className={newBuildAddressStyle.connect}>
                     <div className={newBuildAddressStyle.consignee}>
                         <p className={newBuildAddressStyle.consignee_name}>
@@ -23,9 +24,6 @@ const NewBuildAddress = React.createClass({
                         </p>
                         <p className={newBuildAddressStyle.consignee_phone}>联系方式：
                             <input type="text" className={newBuildAddressStyle.consignee_input}/></p>
-                    </div>
-                    <div className={newBuildAddressStyle.choose_linkman}>
-                        选联系人
                     </div>
                 </div>
                 <div className={newBuildAddressStyle.area}>所在区域：

@@ -5,6 +5,12 @@ input:-ms-input-placeholder{
 input::-webkit-input-placeholder{
     color: #999;opacity:1;
 }
+.title{
+    height: 0.88rem;
+    line-height: 0.88rem;
+    margin-bottom: 0.03rem;
+    composes:bgColorF tc f32 from '../css/base.css';
+}
 .bb{
     border-bottom: 0.01rem solid #EEEFF3;
 }
@@ -15,7 +21,7 @@ input::-webkit-input-placeholder{
 .hand_input{
     height: 0.94rem;
     background: #f1f1f3;
-    composes:pl30 pr30 from '../css/base.css';
+    composes:pl20 pr20 from '../css/base.css';
 }
 .address_input{
     margin-top: 0.17rem;

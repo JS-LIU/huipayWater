@@ -1,7 +1,6 @@
 export const shoppingCart = function(state = {},action) {
     switch (action.type) {
         case'UPDATE_PRODUCT_LIST':
-            console.log(action.productInfo);
             return Object.assign({},state,{
                 cartList:action.productInfo.productList,
                 allChecked:action.productInfo.allChecked,

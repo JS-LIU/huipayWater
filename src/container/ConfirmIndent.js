@@ -14,6 +14,7 @@ const ConfirmIndent = React.createClass({
     render: function () {
         return(
             <div className={confirmIndentStyle.confirmIndent}>
+                <div className={confirmIndentStyle.title}>确认订单</div>
                 <div className={confirmIndentStyle.delivery_message}>
                     <p className={confirmIndentStyle.delivery_person}>
                         <span className={confirmIndentStyle.consignee}>收 货 人：</span>

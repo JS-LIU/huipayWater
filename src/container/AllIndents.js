@@ -66,6 +66,7 @@ const AllIndents = React.createClass({
         });
         return (
             <div className={allIndentsStyle.allIndents}>
+                <div className={allIndentsStyle.title}>全部订单</div>
                 {indentsNodes}
             </div>
         )

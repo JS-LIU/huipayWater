@@ -27,6 +27,7 @@ const TicketCombo = React.createClass({
         });
         return (
             <div className={ticketComboStyle.ticketCombo}>
+                <div className={ticketComboStyle.title}>选择套餐</div>
                 <p className={ticketComboStyle.comboTitle}>水票优惠套餐限时抢购，赶紧购买吧！</p>
                 <div className={ticketComboStyle.comboList}>
                     {comboList}

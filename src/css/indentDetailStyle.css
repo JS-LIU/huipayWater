@@ -1,6 +1,12 @@
 .bb{
     border-bottom:0.01rem solid #EEEFF3;
 }
+.title{
+    height: 0.88rem;
+    line-height: 0.88rem;
+    margin-bottom: 0.03rem;
+    composes:bgColorF tc f32 from '../css/base.css';
+}
 .indentDetail{
     min-height: 13.33rem;
     composes:bgColor f28 c777 from '../css/base.css';
@@ -10,7 +16,7 @@
     composes:bgColorF pl30 pr30 mb30 from '../css/base.css';
 }
 .indent_serial{
-    margin-top: 0.17rem;
+    padding-top:0.1rem;
 }
 .indent_info p{
     height: 0.5rem;
@@ -117,6 +123,7 @@
     composes:f30 from '../css/base.css';
 }
 .delivery_way{
+    margin-bottom: 1.2rem;
     composes:mt30 bgColorF f30 from '../css/base.css';
 }
 .way_title{

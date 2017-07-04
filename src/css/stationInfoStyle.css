@@ -70,7 +70,7 @@
 }
 .subBranch{
     background: #ffffff url("../../src/images/station-details_icon_branch.png") no-repeat 0.3rem center;
-    background-size: 0.35rem;
+    background-size: 0.38rem 0.29rem;
     composes:infoItem;
 }
 .sentTime{

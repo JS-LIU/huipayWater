@@ -5,6 +5,13 @@
     padding-bottom: 0.2rem;
     background: #EEEFF3;
 }
+.title{
+    height: 0.88rem;
+    line-height: 0.88rem;
+    margin-bottom: 0.02rem;
+    composes:bgColorF tc f32 from '../css/base.css';
+}
+
 .product_type{
     display: flex;
     flex-direction: row;

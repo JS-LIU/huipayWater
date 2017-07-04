@@ -2,8 +2,13 @@
     border-bottom: 0.01rem solid #EEEFF3;
 }
 .confirmIndent{
-    min-height: 13rem;
-    composes:bgColor pt30 f30 c333 from '../css/base.css';
+    min-height: 13.3rem;
+    composes:bgColor f30 c333 from '../css/base.css';
+}
+.title{
+    height: 0.88rem;
+    line-height: 0.88rem;
+    composes:bgColorF tc f32 mb24 from '../css/base.css';
 }
 .delivery_message{
     background: #ffffff url("../../src/images/line.png") no-repeat center bottom;

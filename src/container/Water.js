@@ -70,18 +70,8 @@ let ProductType = React.createClass({
     render:function(){
         let typeNodes = this.props.water.type.map((item,index)=>{
             return(
-                <li
-                    key={index}
-                    onClick={this.cutType(index)}
-                    className={waterStyle.product_type_item}
-                    style={item.selected?cActiveStyle:{}}>
-                    {item.selected?(<div>
-                        <span className={waterStyle.type_item_title}>{item.title}</span>
-                        <img src={item.imgAction} alt="" className={waterStyle.type_item_icon}/>
-                    </div>):(<div>
-                        <span className={waterStyle.type_item_title}>{item.title}</span>
-                        <img src={item.img} alt="" className={waterStyle.type_item_icon}/>
-                    </div>)}
+                <li key={index} onClick={this.cutType(index)} className={waterStyle.product_type_item} style={item.selected?cActiveStyle:{}}>
+                    <span className={waterStyle.type_item_title}>{item.title}</span>
                 </li>
             )
         });

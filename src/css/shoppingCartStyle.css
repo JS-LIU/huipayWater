@@ -8,6 +8,14 @@
     min-height: 13.33rem;
     composes:bgColor from '../css/base.css';
 }
+/*.title{*/
+    /*height: 0.88rem;*/
+    /*line-height: 0.88rem;*/
+    /*composes:bgColorF tc f32 mb24 from '../css/base.css';*/
+/*}*/
+.cartListBox{
+   padding-bottom: 2.2rem;
+}
 .cartList{
     composes:f26 c333 bgColorF mb30 from '../css/base.css';
 }
@@ -28,10 +36,14 @@
     width: 0.34rem;
 }
 .station{
+    flex:1;
     padding-left: 0.6rem;
     background: url("../../src/images/shoppingcart_icon_station.png") no-repeat 0.2rem center;
     background-size: 0.3rem;
     composes:f30 from '../css/base.css';
+}
+.edit{
+
 }
 .productList{
 

@@ -45,6 +45,7 @@ const ShoppingCart = React.createClass({
                                 <img src="src/images/shoppingcart_choose_n.png"  className={shoppingCartStyle.checkPic}/>}
                         </p>
                         <p className={shoppingCartStyle.station}>{item.storeName}</p>
+                        <p className={shoppingCartStyle.edit}>编辑</p>
                     </div>
                     <ul className={shoppingCartStyle.productList}>
                         {item.productList.map((item,index)=> {
@@ -75,7 +76,8 @@ const ShoppingCart = React.createClass({
         });
         return (
             <div className={shoppingCartStyle.shoppingCart}>
-                {cartList}
+                {/*<div className={shoppingCartStyle.title}>购物车</div>*/}
+                <div className={shoppingCartStyle.cartListBox}>{cartList}</div>
                 <div className={shoppingCartStyle.cartFooter}>
                     <p onClick={this.allChecked} className={shoppingCartStyle.storeCheck}>
                         {this.props.shoppingCart.allChecked?<img src="src/images/shoppingcart_choose_s.png" className={shoppingCartStyle.checkPic}/>:

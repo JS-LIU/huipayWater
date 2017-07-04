@@ -14,6 +14,7 @@ const IndentDetail = React.createClass({
     render: function () {
         return (
             <div className={indentDetailStyle.indentDetail}>
+                <div className={indentDetailStyle.title}>订单详情</div>
                 <div className={indentDetailStyle.indent_info}>
                     <p className={indentDetailStyle.indent_serial}>订单编号：201704051323</p>
                     <p>下单时间：2016-03-26  08:23:52</p>

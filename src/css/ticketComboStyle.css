@@ -1,10 +1,14 @@
 .ticketCombo{
-    min-height: 12.93rem;
-    padding-top: 0.4rem;
+    min-height: 13.33rem;
     composes:bgColor from '../css/base.css';
 }
+.title{
+    height: 0.88rem;
+    line-height: 0.88rem;
+    composes:bgColorF tc f32 mb24 from '../css/base.css';
+}
 .comboTitle{
-    composes:f30 c777 pl30 from '../css/base.css';
+    composes:f30 c777 pl30 mt30 from '../css/base.css';
 }
 .comboList{
     display: flex;

@@ -2,15 +2,19 @@
     border-top: 0.01rem solid #EEEFF3;
 }
 .newBuildAddress{
-    min-height: 13.03rem;
-    composes:bgColor pt30 from '../css/base.css';
+    min-height: 13.33rem;
+    composes:bgColor from '../css/base.css';
+}
+.title{
+    height: 0.88rem;
+    line-height: 0.88rem;
+    composes:bgColorF tc f32 from '../css/base.css';
 }
 .connect{
     height: 1.83rem;
+    composes:pt30 from '../css/base.css';
 }
 .consignee{
-    float: left;
-    width: 5.66rem;
     composes:bgColorF f30 c333 from '../css/base.css';
 }
 .consignee_name{
@@ -38,7 +42,7 @@
 .consignee_input{
     float: right;
     margin:0.15rem 0.5rem 0.15rem 0;
-    width: 3rem;
+    width: 5.15rem;
     height: 0.6rem;
     line-height: 0.6rem;
     outline: none;
@@ -53,8 +57,8 @@
     float: right;
     height: 0.9rem;
     line-height:0.9rem;
-    width: 5.05rem;
-    background: url("../../src/images/btn_right_arrow@2x.png") no-repeat right center;
+    width: 5.35rem;
+    background:url("../../src/images/btn_right_arrow@2x.png") no-repeat right center;
     background-size: 0.18rem 0.3rem;
 }
 .addressLabel{

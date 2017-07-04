@@ -15,12 +15,17 @@ const WaterDetail = React.createClass({
     componentWillMount:function(){
         this.props.historyUrlsActionKeys.pushUrl('/WaterDetail');
     },
+    componentDidMount:function(){
+         _h.ui.scrollToTheBottom(()=>{
+             this.props.waterDetailActionKeys.changeType(1);
+         });
+    },
     render: function () {
         return (
             <div>
-                {/*<Header*/}
-                    {/*waterDetail={this.props.waterDetail}*/}
-                    {/*waterDetailActionKeys={this.props.waterDetailActionKeys}/>*/}
+                <Header
+                    waterDetail={this.props.waterDetail}
+                    waterDetailActionKeys={this.props.waterDetailActionKeys}/>
                 {this.props.waterDetail.skip?
                     (<ProductShow
                         waterDetail={this.props.waterDetail}
@@ -41,16 +46,16 @@ const Header = React.createClass({
     render: function () {
         return (
             <div className={waterDetailStyle.waterDetailTitle}>
-                <Link to="/Order" className={waterDetailStyle.leftBtn}>
-                    <p className={waterDetailStyle.waterReturn}>订水</p>
-                </Link>
+                {/*<Link to="/Order" className={waterDetailStyle.leftBtn}>*/}
+                    {/*<p className={waterDetailStyle.waterReturn}>订水</p>*/}
+                {/*</Link>*/}
                 <div className={waterDetailStyle.waterDetailSkip}>
                     <p style={this.props.waterDetail.skip?cActiveStyle:{}} className={waterDetailStyle.skipProduct} onClick={this.cutType(0)}>商品</p>
                     <p style={this.props.waterDetail.skip?{}:cActiveStyle} onClick={this.cutType(1)}>详情</p>
                 </div>
-                <div className={waterDetailStyle.rightBtn}>
-                    <img src="src/images/nav_common_btn_share.png" className={waterDetailStyle.rightShare}/>
-                </div>
+                {/*<div className={waterDetailStyle.rightBtn}>*/}
+                    {/*<img src="src/images/nav_common_btn_share.png" className={waterDetailStyle.rightShare}/>*/}
+                {/*</div>*/}
             </div>
         )
     }
@@ -114,9 +119,10 @@ const ProductShow = React.createClass({
                 <ProductList water={this.props.water}>
                     <ProductRowList  water={this.props.water}/>
                 </ProductList>
+                {this.props.waterDetail.skip?
                 <div className={waterDetailStyle.pullUp}>
                     上拉查看详情
-                </div>
+                </div>:'<ProductDetail />'}
                 <Footer/>
             </div>
         )

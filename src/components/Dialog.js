@@ -1,7 +1,5 @@
 let React = require('react');
-let { bindActionCreators } = require('redux');
 let { Link } = require('react-router');
-let { connect } = require('react-redux');
 
 import dialogStyle from '../css/dialogStyle.css'
 

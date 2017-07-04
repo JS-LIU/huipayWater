@@ -168,15 +168,18 @@ a{
 .h{height:100%;}
 
 /*边距*/
+.pt10{  padding-top:0.1rem;}
 .pt20{  padding-top:0.2rem;}
 .pt24{  padding-top:0.24rem;}
 .pt30{  padding-top:0.3rem;}
 .pl10{  padding-left:0.1rem;}
+.pl20{  padding-left:0.20rem;}
 .pl24{  padding-left:0.24rem;}
 .pl30{  padding-left:0.3rem;}
 .pl40{  padding-left:0.4rem;}
 .pl50{  padding-left:0.5rem;}
 .pr10{  padding-right:0.1rem;}
+.pr20{  padding-right:0.2rem;}
 .pr24{  padding-right:0.24rem;}
 .pr30{  padding-right:0.3rem;}
 .pr40{  padding-right:0.4rem;}

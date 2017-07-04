@@ -38,6 +38,7 @@ const Address = React.createClass({
         });
         return (
             <div className={addressListStyle.address}>
+                <div className={addressListStyle.title}>选择收货地址</div>
                 <div className={addressListStyle.hand_input}>
                     <input type="text" placeholder="请输入你的收货地址" className={addressListStyle.address_input}/>
                 </div>

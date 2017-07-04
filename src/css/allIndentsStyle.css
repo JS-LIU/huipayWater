@@ -1,9 +1,14 @@
 .bb{
     border-bottom:0.01rem solid #EEEFF3;
 }
+.title{
+    height: 0.88rem;
+    line-height: 0.88rem;
+    margin-bottom: 0.03rem;
+    composes:bgColorF tc f32 from '../css/base.css';
+}
 .allIndents{
     min-height: 13.33rem;
-    margin-top: -0.3rem;
     composes:bgColor pb30 from '../css/base.css';
 }
 .indentsNodes{

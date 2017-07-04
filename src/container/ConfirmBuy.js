@@ -15,6 +15,7 @@ const ConfirmBuy = React.createClass({
     render: function () {
         return (
             <div className={confirmBuyStyle.confirmBuy}>
+                <div className={confirmBuyStyle.title}>确认购买</div>
                 <p className={confirmBuyStyle.actually}>
                     <span>实付金额</span>
                     <span className={confirmBuyStyle.amount}>￥45.00</span>

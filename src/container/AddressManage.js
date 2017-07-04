@@ -44,8 +44,9 @@ const AddressManage = React.createClass({
             )
         });
         return (
-            <div>
-                <ul className={addressManageStyle.addressManage}>
+            <div className={addressManageStyle.addressManage}>
+                <div className={addressManageStyle.title}>地址管理</div>
+                <ul>
                     {addressNodes}
                     <div className={addressManageStyle.newBuiltAddress}>
                         新建地址
