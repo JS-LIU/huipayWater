@@ -8,6 +8,7 @@ const MyOrderList = React.createClass({
             return (
                 <li key={index} className={assembleListStyle.order_list_nodes}>
                     <Link to={item.url}>
+                        {item.num>0?<span className={assembleListStyle.minTable}>{item.num}</span>:''}
                         <p className={assembleListStyle.order_list_item} style={orderBgStyle(item.icon)}>{item.name}</p>
                     </Link>
                 </li>

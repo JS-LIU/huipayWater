@@ -1,9 +1,15 @@
-import {GET_PRODUCTS,CHANGE_ARRAY_WAY} from '../actions/waterActionKeys';
+import {GET_PRODUCTS,CHANGE_ARRAY_WAY,GET_PRODUCTS_BY_BRAND} from '../actions/waterActionKeys';
 
 export const waterActions = {
     getProductList:(index)=>{
         return {
             type: GET_PRODUCTS,
+            index
+        }
+    },
+    getProductListByBrand:(index)=>{
+        return {
+            type: GET_PRODUCTS_BY_BRAND,
             index
         }
     },

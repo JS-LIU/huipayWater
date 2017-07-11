@@ -1,0 +1,25 @@
+export const myVoucherInit={
+    voucherList:[
+        {
+            stationName:'乐百氏旗舰店',
+            price:'20',
+            condition:'100',
+            validity:'2017-06-09',
+            amount:3,
+        },
+        {
+            stationName:'喜腾山泉旗舰店',
+            price:'10',
+            condition:'100',
+            validity:'2017-06-09',
+            amount:1,
+        },
+        {
+            stationName:'农夫山泉旗舰店',
+            price:'5',
+            condition:'20',
+            validity:'2017-06-23',
+            amount:1,
+        },
+    ],
+};

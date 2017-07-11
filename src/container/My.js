@@ -55,18 +55,22 @@ const My = React.createClass({
                     <MyOrderList itemList={[{
                         name:"待付款",
                         url:'',
+                        num:2,
                         icon:'src/images/me_order_pending-payment.png'
                     }, {
                         name:'待收货',
                         url:'',
+                        num:1,
                         icon:'src/images/me_order_pending_receive.png'
                     },{
                         name:'待评价',
                         url:'',
+                        num:0,
                         icon:'src/images/me_order_pending_evaluation.png'
                     },{
                         name:'退换',
                         url:'',
+                        num:0,
                         icon:'src/images/me_order_return-goods.png'
                     }]}/>
                 </div>

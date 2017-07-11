@@ -45,13 +45,18 @@ const AddressManage = React.createClass({
         });
         return (
             <div className={addressManageStyle.addressManage}>
-                <div className={addressManageStyle.title}>地址管理</div>
-                <ul>
-                    {addressNodes}
-                    <div className={addressManageStyle.newBuiltAddress}>
-                        新建地址
-                    </div>
-                </ul>
+                {/*<div className={addressManageStyle.title}>地址管理</div>*/}
+                {this.props.address.profile==''?
+                    <div className={addressManageStyle.noAddress}>
+                        <img src="src/images/no_address.png" className = {addressManageStyle.noAddressPic}/>
+                        <p className={addressManageStyle.addressTip}>没有收货地址</p>
+                    </div>:
+                    <ul>
+                        {addressNodes}
+                    </ul>}
+                <div className={addressManageStyle.newBuiltAddress}>
+                    新建地址
+                </div>
                 {this.props.showDialog.showDialog?
                     (<div><Dialog>
                         <DeleteDialogContent content={{text:'是否确定删除此地址',operate:'删除'}}

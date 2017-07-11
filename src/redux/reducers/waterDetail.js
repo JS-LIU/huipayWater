@@ -7,7 +7,6 @@ export const waterDetail = function(state = {},action) {
             }else{
                 skip=false;
             }
-            console.log(action.index);
             return Object.assign({},state,{
                 skip:skip
             });

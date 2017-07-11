@@ -12,8 +12,8 @@ import buyWaterStyle from '../css/buyWaterStyle.css';
 
 const BuyWater = React.createClass({
     componentWillMount:function(){
-        this.props.historyUrlsActionKeys.pushUrl('/Order');
-        this.props.historyUrlsActionKeys.mark('/Order');
+        this.props.historyUrlsActionKeys.pushUrl('/BuyWater');
+        this.props.historyUrlsActionKeys.mark('/BuyWater');
     },
     componentDidMount:function(){
         var aMap = new autonaviMap();
@@ -58,7 +58,7 @@ const BuyWater = React.createClass({
                 <Link to="/Water">
                     <div className={buyWaterStyle.barrelled}>
                         <p className={buyWaterStyle.barrelled_title}>桶装水热卖</p>
-                        <img src="" alt="" className={buyWaterStyle.barrelled_pic}/>
+                        <img src="src/images/city_distribution@2x.png" alt="" className={buyWaterStyle.barrelled_pic}/>
                     </div>
                 </Link>
                 <div className={buyWaterStyle.recommend}>
@@ -67,11 +67,11 @@ const BuyWater = React.createClass({
                         <p className={buyWaterStyle.water_coupon}>水票更优惠</p>
                         <p className={buyWaterStyle.water_coupon_sub}>电子水票,全城通用</p>
                         <div className={buyWaterStyle.coupon_pic}>
-                            <img src="" alt="" className={buyWaterStyle.pail}/>
-                            <div className={buyWaterStyle.ticket_text}>
-                                <p className={buyWaterStyle.ticket_title}>喜腾山泉</p>
-                                <p className={buyWaterStyle.ticket_subTitle}>天然饮用水 18L</p>
-                            </div>
+                            {/*<img src="" alt="" className={buyWaterStyle.pail}/>*/}
+                            {/*<div className={buyWaterStyle.ticket_text}>*/}
+                                {/*<p className={buyWaterStyle.ticket_title}>喜腾山泉</p>*/}
+                                {/*<p className={buyWaterStyle.ticket_subTitle}>天然饮用水 18L</p>*/}
+                            {/*</div>*/}
                             {/*<p className={buyWaterStyle.ticket_scope}>全市通用</p>*/}
                         </div>
                         </Link>
@@ -79,9 +79,7 @@ const BuyWater = React.createClass({
                     <div className={buyWaterStyle.other}>
                         <p className={buyWaterStyle.water_coupon}>发现好货</p>
                         <p className={buyWaterStyle.water_coupon_sub}>柴米油盐酱醋茶</p>
-                        <div className={buyWaterStyle.other_pic}>
-                            <img src="" alt=""/>
-                        </div>
+                        <img src="src/images/16@2x.png" className={buyWaterStyle.other_pic}/>
                     </div>
                 </div>
 

@@ -13,6 +13,7 @@ function clear(list){
 export const choose = function(state = {},action){
     switch (action.type) {
         case 'SELECTED_BUCKET':
+            console.log('----choose index----',action.index);
             return Object.assign({},state,{
                 bucketList:selected([...state.bucketList],action.index),
                 volume:state.bucketList[action.index].capacity,

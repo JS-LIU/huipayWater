@@ -80,7 +80,7 @@
     composes:infoItem;
 }
 .sentRange{
-    background: #ffffff url("../../src/images/trumpet.png") no-repeat 0.3rem center;
+    background: #ffffff url("../../src/images/scope_ delivery.png") no-repeat 0.3rem center;
     background-size: 0.35rem;
     composes:infoItem;
 }

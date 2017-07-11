@@ -1,0 +1,50 @@
+.station_box{
+    height:13.33rem;
+    background: #EEEFF3;
+}
+.stationList{
+    background-size: 7.5rem 0.04rem;
+}
+.stationList_item{
+    display: flex;
+    height:2.4rem;
+    border-bottom: 0.01rem solid #EEEFF3;
+    background: #FFFFFF;
+}
+.item_pic{
+    width: 1.9rem;
+    height:1.9rem;
+    margin: 0.24rem 0.26rem;
+}
+.item_descript{
+    width: 100%;
+    margin-right: 0.26rem;
+    margin-top: 0.24rem;
+}
+.item_station_name{
+    color: #333333;
+    composes:f32 from '../css/base.css';
+}
+.item_station_approve{
+    position: absolute;
+    width: 0.52rem;
+    height:0.26rem;
+    margin-top: 0.13rem;
+    margin-left: 0.16rem;
+}
+.item_station_evaluate{
+    margin-top:0.28rem;
+    color: #999999;
+    composes:f24 from '../css/base.css';
+}
+.item_evaluate_sale{
+    margin-left: 0.34rem;
+}
+.item_station_address{
+    margin-top: 0.3rem;
+    padding-left: 0.4rem;
+    background: url(../images/address-05.png) no-repeat left center;
+    background-size: 0.3rem;
+    color: #999999;
+    composes:f24 from '../css/base.css';
+}

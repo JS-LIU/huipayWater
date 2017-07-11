@@ -77,9 +77,8 @@
 }
 .item_station_approve{
     position: absolute;
-    width: 0.52rem;
-    height:0.26rem;
-    margin-top: 0.13rem;
+    height:0.3rem;
+    margin-top: 0.12rem;
     margin-left: 0.16rem;
 }
 .item_station_evaluate{

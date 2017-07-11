@@ -92,3 +92,25 @@
     height: 0.35rem;
     margin-top: 0.15rem;
 }
+.mask{
+    position: fixed;
+    z-index: 9;
+    background: #000;
+    opacity: 0.3;
+    top:2rem;
+    bottom: 0;
+    composes: w h from '../css/base.css';
+}
+.brand_type{
+    position: absolute;
+    z-index: 11;
+    top:2rem;
+    width: 100%;
+    composes:bgColorF from '../css/base.css';
+}
+.category_type{
+    height: 0.88rem;
+    line-height: 0.88rem;
+    border-bottom: 0.01rem solid #EEEFF3;
+    composes:f32 pl30 pr30 from '../css/base.css';
+}

@@ -15,8 +15,11 @@ import {stationCertain} from './stationCertain';
 import {userInfo} from './userInfo';
 import {allIndents} from './allIndents';
 import {address} from './address';
+import {myVoucher} from './myVoucher';
+import {myWaterTicket} from './myWaterTicket';
 import {shoppingCart} from './shoppingCart';
 import {showDialog} from './showDialog';
+import {waterTicketDetail} from './waterTicketDetail';
 
 const rootReducer = combineReducers({
     map,
@@ -32,7 +35,10 @@ const rootReducer = combineReducers({
     showDialog,
     stationCertain,
     address,
+    myVoucher,
+    myWaterTicket,
     shoppingCart,
+    waterTicketDetail,
     routing
 });
 

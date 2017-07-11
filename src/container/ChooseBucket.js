@@ -5,9 +5,9 @@ let { connect } = require('react-redux');
 
 import {historyUrlsActions} from '../redux/actions/historyUrlsActions';
 import {chooseActions} from '../redux/actions/chooseActions';
-import chooseStyle from '../css/chooseStyle.css';
+import chooseBucketStyle from '../css/chooseBucketStyle.css';
 
-const Choose = React.createClass({
+const ChooseBucket = React.createClass({
     componentWillMount:function(){
         this.props.historyUrlsActionKeys.pushUrl('/Choose');
     },
@@ -20,20 +20,20 @@ const Choose = React.createClass({
     render: function () {
         let bucketNodes = this.props.choose.bucketList.map((item,index)=>{
             return(
-                <li className={chooseStyle.chooseItem}
+                <li className={chooseBucketStyle.chooseItem}
                     key={index}
                     onClick={this.chooseBucket(index)}
                     style={item.selected?bucket_selected:{}}>
                     <Link to="/WaterDetail">
-                    {item.capacity}
+                        {item.capacity}L
                     </Link>
                 </li>
             )
         });
         return (
-            <div className={chooseStyle.choose}>
-                <p className={chooseStyle.chooseType}>桶</p>
-                <ul className={chooseStyle.chooseContent}>
+            <div className={chooseBucketStyle.choose}>
+                <p className={chooseBucketStyle.chooseType}>桶</p>
+                <ul className={chooseBucketStyle.chooseContent}>
                     {bucketNodes}
                 </ul>
             </div>
@@ -53,7 +53,7 @@ function mapDispatchToProps(dispatch){
         historyUrlsActionKeys:bindActionCreators(historyUrlsActions,dispatch),
     }
 }
-module.exports = connect(mapStateToProps,mapDispatchToProps)(Choose);
+module.exports = connect(mapStateToProps,mapDispatchToProps)(ChooseBucket);
 const bucket_selected={
     border:"0.01rem solid #4dc0ff",
 }

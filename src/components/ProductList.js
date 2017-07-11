@@ -56,6 +56,47 @@ let ProductType = React.createClass({
     }
 });
 
+let StationProductType = React.createClass({
+    cutType:function(index){
+        return()=>{
+            this.props.stationCertainActionKeys.getStationProductList(index);
+        }
+    },
+    cutArray:function(){
+        this.props.stationCertainActionKeys.changeStationArray();
+    },
+    render:function(){
+        let typeNodes = this.props.stationCertain.type.map((item,index)=>{
+            return(
+                <li
+                    key={index}
+                    onClick={this.cutType(index)}
+                    className={productListStyle.product_type_item}
+                    style={item.selected?cActiveStyle:{}}>
+                    {item.selected?(<div>
+                        <span className={productListStyle.type_item_title}>{item.title}</span>
+                        <img src={item.imgAction} alt="" className={productListStyle.type_item_icon}/>
+                    </div>):(<div>
+                        <span className={productListStyle.type_item_title}>{item.title}</span>
+                        <img src={item.img} alt="" className={productListStyle.type_item_icon}/>
+                    </div>)}
+                </li>
+            )
+        });
+        return(
+            <ul className={productListStyle.product_type}>
+                {typeNodes}
+                <li onClick={this.cutArray} className={productListStyle.product_type_item}>
+                    {this.props.stationCertain.arrange.array?
+                        (<img src={this.props.stationCertain.arrange.imgAction} className={productListStyle.type_item_icon}/>):
+                        (<img src={this.props.stationCertain.arrange.img} className={productListStyle.type_item_icon}/>)
+                    }
+                </li>
+            </ul>
+        )
+    }
+});
+
 const ProductRowList = React.createClass({
     render: function () {
         let productNodes = this.props.water.productList.map((item,index)=>{
@@ -117,7 +158,7 @@ let ProductVerList = React.createClass({
     }
 });
 
-module.exports = {ProductList,ProductType,ProductRowList,ProductVerList};
+module.exports = {ProductList,ProductType,StationProductType,ProductRowList,ProductVerList};
 
 const cActiveStyle = {
     color:"#0A89FE"

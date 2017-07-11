@@ -21,7 +21,9 @@ const TicketCombo = React.createClass({
                    className={ticketComboStyle.comboNode}
                    onClick={this.chooseCombo(index)}
                    style={item.selected?cActiveStyle:{}}>
-                    {item.favorable}
+                    <Link to='/WaterTicketDetail'>
+                        {item.favorable}
+                    </Link>
                 </p>
             )
         });

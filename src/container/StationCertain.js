@@ -4,9 +4,9 @@ let { Link } = require('react-router');
 let { connect } = require('react-redux');
 let _h = require('../Util/HB');
 
-import{ProductList,ProductType,ProductRowList,ProductVerList} from '../components/ProductList';
+import{ProductList,StationProductType,ProductRowList,ProductVerList} from '../components/ProductList';
 import {historyUrlsActions} from '../redux/actions/historyUrlsActions';
-import {waterActions} from '../redux/actions/waterActions';
+import {stationCertainActions} from '../redux/actions/stationCertainActions';
 import stationCertainStyle from '../css/stationCertainStyle.css';
 
 const StationCertain = React.createClass({
@@ -18,9 +18,9 @@ const StationCertain = React.createClass({
             <div className={stationCertainStyle.stationCertain}>
                 <WaterStore />
                 <SpecialOffer/>
-                <ProductList water={this.props.water} waterActionKeys={this.props.waterActionKeys}>
-                    <ProductType water={this.props.water} waterActionKeys={this.props.waterActionKeys}/>
-                    {this.props.water.arrange.array?
+                <ProductList stationCertain={this.props.stationCertain} water={this.props.water} stationCertainActionKeys={this.props.stationCertainActionKeys}>
+                    <StationProductType stationCertain={this.props.stationCertain} stationCertainActionKeys={this.props.stationCertainActionKeys}/>
+                    {this.props.stationCertain.arrange.array?
                         (<ProductRowList
                             water={this.props.water}/>):
                         (<ProductVerList
@@ -36,26 +36,28 @@ const WaterStore = React.createClass({
     render: function () {
         return (
             <div className={stationCertainStyle.waterStore}>
-                <div className={stationCertainStyle.storeBasic}>
-                    <img src="" className={stationCertainStyle.storePic}/>
-                    <div className={stationCertainStyle.storeName}>
-                        <p>怡宝桶装水旗舰店</p>
-                        <p className={stationCertainStyle.degree}>
-                            <img src="src/images/icon_star_orange.png" className={stationCertainStyle.judgeStar}/>
-                            <img src="src/images/icon_star_orange.png" className={stationCertainStyle.judgeStar}/>
-                            <img src="src/images/icon_star_orange.png" className={stationCertainStyle.judgeStar}/>
-                            <img src="src/images/icon_star_orange.png" className={stationCertainStyle.judgeStar}/>
-                            <img src="src/images/icon_star_gray.png" className={stationCertainStyle.judgeStar}/>
-                            <Link to="/StationInfo" className={stationCertainStyle.rightBtnBox}>
-                                <img src="src/images/btn_right_arrow@2x.png" className={stationCertainStyle.rightBtn}/>
-                            </Link>
-                            <span className={stationCertainStyle.judgeNum}>9.0</span>
-                        </p>
-                        <p className={stationCertainStyle.location}>
-                            <span>西城区百万庄大街2号甲</span>
-                            <span className={stationCertainStyle.distance}>0.96km</span>
-                        </p>
-                    </div>
+                <div>
+                    <Link to="/StationInfo" className={stationCertainStyle.storeBasic}>
+                        <img src="" className={stationCertainStyle.storePic}/>
+                        <div className={stationCertainStyle.storeName}>
+                            <p>怡宝桶装水旗舰店</p>
+                            <p className={stationCertainStyle.degree}>
+                                <img src="src/images/icon_star_orange.png" className={stationCertainStyle.judgeStar}/>
+                                <img src="src/images/icon_star_orange.png" className={stationCertainStyle.judgeStar}/>
+                                <img src="src/images/icon_star_orange.png" className={stationCertainStyle.judgeStar}/>
+                                <img src="src/images/icon_star_orange.png" className={stationCertainStyle.judgeStar}/>
+                                <img src="src/images/icon_star_gray.png" className={stationCertainStyle.judgeStar}/>
+                                <Link to="/StationInfo" className={stationCertainStyle.rightBtnBox}>
+                                    <img src="src/images/btn_right_arrow@2x.png" className={stationCertainStyle.rightBtn}/>
+                                </Link>
+                                <span className={stationCertainStyle.judgeNum}>月售：1903</span>
+                            </p>
+                            <p className={stationCertainStyle.location}>
+                                <span>西城区百万庄大街2号甲</span>
+                                <span className={stationCertainStyle.distance}>0.96km</span>
+                            </p>
+                        </div>
+                    </Link>
                 </div>
                 <div className={stationCertainStyle.storeDetail}>
                     <div className={stationCertainStyle.chunk}>
@@ -119,11 +121,12 @@ function mapStateToProps(state){
     return {
         historyUrls:state.historyUrls,
         water:state.water,
+        stationCertain:state.stationCertain,
     }
 }
 function mapDispatchToProps(dispatch){
     return{
-        waterActionKeys : bindActionCreators(waterActions,dispatch),
+        stationCertainActionKeys : bindActionCreators(stationCertainActions,dispatch),
         historyUrlsActionKeys:bindActionCreators(historyUrlsActions,dispatch),
     }
 }

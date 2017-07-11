@@ -16,7 +16,7 @@ const Station = React.createClass({
         return (
             <div className={stationStyle.station_box}>
                 <div className={stationStyle.headLocation}>
-                    <Link to="/" className={stationStyle.order_titleCity}>
+                    <Link to="/AddressList" className={stationStyle.order_titleCity}>
                         <p id="city">{this.props.map.city}</p>
                         <span className={stationStyle.triangle}></span>
                     </Link>
@@ -38,24 +38,26 @@ const StationList = React.createClass({
     render: function () {
         let stationNodes = this.props.station.stationList.map((item,index)=>{
             return(
-                <li className={stationStyle.stationList_item} key={index}>
-                    <div className={stationStyle.item_pic_box}>
-                        <img src="" alt="" className={stationStyle.item_pic}/>
-                    </div>
-                    <div className={stationStyle.item_descript}>
-                        <p className={stationStyle.item_station_name}>{item.title}
-                            {item.approve?<img src={item.approveImg} className={stationStyle.item_station_approve}/>:""}
-                        </p>
-                        <p className={stationStyle.item_station_evaluate}>
-                            <span>fgdsfgsd</span>
-                            <span className={stationStyle.item_evaluate_sale}>月售：{item.sale}</span>
-                            <span></span>
-                        </p>
-                        <p className={stationStyle.item_station_address}>
-                            <span>{item.address}</span>
-                            <span></span>
-                        </p>
-                    </div>
+                <li  key={index}>
+                    <Link to="/StationCertain" className={stationStyle.stationList_item}>
+                        <div className={stationStyle.item_pic_box}>
+                            <img src="" alt="" className={stationStyle.item_pic}/>
+                        </div>
+                        <div className={stationStyle.item_descript}>
+                            <p className={stationStyle.item_station_name}>{item.title}
+                                {item.approve?<img src={item.approveImg} className={stationStyle.item_station_approve}/>:""}
+                            </p>
+                            <p className={stationStyle.item_station_evaluate}>
+                                <span>fgdsfgsd</span>
+                                <span className={stationStyle.item_evaluate_sale}>月售：{item.sale}</span>
+                                <span></span>
+                            </p>
+                            <p className={stationStyle.item_station_address}>
+                                <span>{item.address}</span>
+                                <span></span>
+                            </p>
+                        </div>
+                    </Link>
                 </li>
             )
         });

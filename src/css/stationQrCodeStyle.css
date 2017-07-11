@@ -1,0 +1,41 @@
+.stationQrCode{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 13.33rem;
+    background: #333333;
+}
+.content{
+    height:9rem;
+    width:5.7rem;
+    composes:bgColorF from '../css/base.css';
+    composes:pl40 pr40 from '../css/base.css';
+}
+.title{
+    display:flex;
+    margin-top: 0.5rem;
+}
+.stationPic{
+    height:1.5rem;
+    width: 1.5rem;
+}
+.basicInfo{
+    margin-left: 0.3rem;
+    composes:f36 c333 from '../css/base.css';
+}
+.storeName{
+    margin-top: 0.2rem;
+    line-height: 0.65rem;
+}
+.merchantNum{
+    composes:f30 c999 from '../css/base.css';
+}
+.qrCode{
+    margin: 0.7rem auto;
+    height: 4.5rem;
+    width: 4.5rem;
+    border: 0.01rem solid #E3E3E3;
+}
+.attention{
+    composes:f28 c777 tc from '../css/base.css';
+}

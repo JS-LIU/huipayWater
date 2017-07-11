@@ -59,7 +59,7 @@ var Carousel = React.createClass({
         let imgNodes = this.props.pictures.map((item,index)=>{
             return (
                 <li className={carousel.carousel_item} key={index}>
-                    <img src={item.picUrl} alt="" style={{height:"7.5rem",width:"7.5rem"}}/>
+                    <img src={item.picUrl} alt="" style={{height:"3.39rem",width:"7.02rem",margin:"0 auto"}}/>
                 </li>
             )
         });

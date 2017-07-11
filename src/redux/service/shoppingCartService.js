@@ -52,7 +52,6 @@ const compareSid = function(product, dosometh, go = true) {
             }
             return dosometh(item);
         }
-
     }
 };
 

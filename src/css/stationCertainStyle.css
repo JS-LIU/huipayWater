@@ -66,7 +66,7 @@
 }
 .storeDetail{
     display: flex;
-    padding: 0.2rem 0;
+    padding: 0.15rem 0;
     border-bottom: 0.01rem solid #e3e3e3;
 }
 .chunk{
@@ -81,7 +81,6 @@
     composes:f32 from '../css/base.css';
 }
 .describe{
-    margin-top: 0.12rem;
     color: #999999;
     composes:f26 from '../css/base.css';
 }

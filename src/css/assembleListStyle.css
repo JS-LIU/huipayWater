@@ -7,6 +7,19 @@
 .order_list_nodes{
     flex:1;
 }
+.minTable{
+    display: inline-block;
+    float: left;
+    height: 0.3rem;
+    margin-top: -0.1rem;
+    margin-left: 1.05rem;
+    width: 0.3rem;
+    text-align: center;
+    line-height: 0.3rem;
+    border-radius: 50%;
+    background: #FF4243;
+    color: #ffffff;
+}
 .order_list_item{
     padding-top: 0.52rem;
 }

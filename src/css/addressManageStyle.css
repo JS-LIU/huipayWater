@@ -54,7 +54,9 @@
     margin-left: 0.38rem;
 }
 .newBuiltAddress{
-    margin:1rem auto;
+    position: fixed;
+    bottom: 1rem;
+    left: 0.3rem;
     border-radius: 0.1rem;
     width: 6.9rem;
     height: 0.8rem;
@@ -70,4 +72,20 @@
     opacity: 0.3;
     bottom: 0;
     composes: w h from '../css/base.css';
+}
+.noAddressPic{
+    height: 1.02rem;
+    width: 0.98rem;
+}
+.noAddress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+}
+.addressTip{
+    height: 0.8rem;
+    line-height: 0.8rem;
+    composes:f28 c333 from '../css/base.css';
 }

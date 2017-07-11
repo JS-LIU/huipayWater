@@ -67,6 +67,11 @@ let ProductType = React.createClass({
             this.props.waterActionKeys.getProductList(index);
         }
     },
+    selectBrand:function(index){
+        return()=>{
+            this.props.waterActionKeys.getProductListByBrand(index);
+        }
+    },
     render:function(){
         let typeNodes = this.props.water.type.map((item,index)=>{
             return(
@@ -75,10 +80,24 @@ let ProductType = React.createClass({
                 </li>
             )
         });
+        let brandTypeNodes = this.props.water.type[3].category.map((item,index)=>{
+            return(
+                <li key={index} onClick={this.selectBrand(index)} className={waterStyle.category_type}  style={item.selected?brandActiveStyle:{}}>
+                    <span>{item.brand}</span>
+                </li>
+            )
+        });
         return(
-            <ul className={waterStyle.product_type}>
-                {typeNodes}
-            </ul>
+            <div>
+                <ul className={waterStyle.product_type}>
+                    {typeNodes}
+                </ul>
+                {this.props.water.type[3].selected?
+                    (<div>
+                        <div className={waterStyle.mask}></div>
+                        <ul className={waterStyle.brand_type}>{brandTypeNodes}</ul>
+                    </div>):''}
+            </div>
         )
     }
 });
@@ -100,4 +119,9 @@ module.exports = connect(mapStateToProps,mapDispatchToProps)(Water);
 
 const cActiveStyle = {
     color:"#0A89FE"
+};
+const brandActiveStyle = {
+    color:"#0A89FE",
+    background:'url("src/images/select_brand.png") no-repeat 6.9rem center',
+    backgroundSize:'0.3rem 0.16rem ',
 };

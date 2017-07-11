@@ -15,7 +15,7 @@ const WaterTicket = React.createClass({
     render: function () {
         return (
             <div className={waterTicketStyle.bgColor}>
-                <div className={waterTicketStyle.title}>水票</div>
+                {/*<div className={waterTicketStyle.title}>水票</div>*/}
                 <WaterTicketList
                     waterTicket={this.props.waterTicket}
                     waterTicketActionKeys={this.props.waterTicketActionKeys}/>

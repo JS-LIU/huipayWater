@@ -1,0 +1,71 @@
+.consume_judge{
+    min-height: 13.33rem;
+    background: #EEEFF3;
+}
+.proPromote{
+    display: flex;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    padding-left: 0.3rem;
+    composes:f32 bgColorF from '../css/base.css';
+}
+.storeBasic,
+.consumer{
+    display: flex;
+    padding:0 0.3rem;
+    border-top:0.01rem solid #E3E3E3;
+    composes:bgColorF from '../css/base.css';
+}
+.portrait{
+    height: 0.6rem;
+    margin:0.35rem 0;
+    border-radius: 0.3rem;
+}
+.userName{
+    margin:0.26rem 0 0.2rem 0.2rem;
+    width: 4rem;
+    composes:f28 c333 from '../css/base.css';
+}
+.degree{
+    composes:f26 from '../css/base.css';
+}
+.degree img{
+    width: 0.25rem;
+    margin-right: 0.1rem;
+}
+.judgeTime {
+    line-height: 1.3rem;
+    margin-left: 0.35rem;
+    color: #999999;
+    composes:f26 tc from '../css/base.css';
+}
+.judgeContent{
+    padding:0 0.3rem 0.3rem 0.3rem;
+    line-height: 0.5rem;
+    color: #777777;
+    composes:f26 bgColorF from '../css/base.css';
+}
+.judgeContent img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top:0.3rem;
+    margin-right: 0.2rem;
+}
+.promoteContent{
+    border-bottom:0.01rem solid #E3E3E3;
+}
+.triangle{
+    display: inline-block;
+    margin-left: 0.35rem;
+    margin-top: 0.05rem;
+    height:0;
+    width: 0;
+    border-color: #FFFFFF #FFFFFF #EEEFF3 #FFFFFF;
+    border-style: solid;
+    border-width: 0 0.15rem 0.14rem 0.15rem;
+}
+.reply{
+    background: #EEEFF3;
+    margin-top:-0.15rem;
+    composes:pl30 pr30 pt10 pb10 from '../css/base.css';
+}

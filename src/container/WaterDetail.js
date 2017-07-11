@@ -14,12 +14,13 @@ import waterDetailStyle from '../css/waterDetailStyle.css';
 const WaterDetail = React.createClass({
     componentWillMount:function(){
         this.props.historyUrlsActionKeys.pushUrl('/WaterDetail');
+        console.log(this.props.waterDetail.skip)
     },
-    componentDidMount:function(){
-         _h.ui.scrollToTheBottom(()=>{
-             this.props.waterDetailActionKeys.changeType(1);
-         });
-    },
+    // componentDidMount:function(){
+    //      _h.ui.scrollToTheBottom(()=>{
+    //          this.props.waterDetailActionKeys.changeType(1);
+    //      });
+    // },
     render: function () {
         return (
             <div>

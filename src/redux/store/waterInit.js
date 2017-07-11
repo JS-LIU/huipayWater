@@ -59,8 +59,29 @@ export const waterInit = {
         {
             varietyId: {brandTag: -1},
             title: "品牌",
-            selected: false
+            selected: false,
+            category:[
+                {
+                    brand:'喜腾山泉',
+                    selected:false
+                },
+                {
+                    brand:'农夫山泉',
+                    selected:false
+                },
+                {
+                    brand:'乐百氏',
+                    selected:false
+                },
+                {
+                    brand:'景田',
+                    selected:false
+                },
+                {
+                    brand:'怡宝',
+                    selected:false
+                },
+            ]
         },
-
     ]
-}
+};

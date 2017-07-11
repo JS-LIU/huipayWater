@@ -1,3 +1,3 @@
 export const dialogInit = {
-    showDialog:true,
+    showDialog:false,
 };
