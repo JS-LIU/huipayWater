@@ -40,6 +40,7 @@ const MyWaterTicket = require('./container/MyWaterTicket');
 const AccountManage = require('./container/AccountManage');
 const MyWaterTicketDetail = require('./container/myWaterTicketDetail');
 const VoucherDetail = require('./container/VoucherDetail');
+const A_test = require('./container/A_test');
 
 import {mapInit} from  './redux/store/mapInit';
 import {waterInit} from  './redux/store/waterInit';
@@ -101,6 +102,7 @@ const getRoutes = ()=>{
             <Route path="/MySetting" component={MySetting}></Route>
             <Route path="/AccountManage" component={AccountManage}></Route>
             <Route path="/VoucherDetail" component={VoucherDetail}></Route>
+            <Route path="/A_test" component={A_test}></Route>
         </Router>
     )};
 

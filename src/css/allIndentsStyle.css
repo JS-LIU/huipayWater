@@ -12,7 +12,7 @@
     composes:bgColor pb30 from '../css/base.css';
 }
 .indentsNodes{
-    composes:mt30 bgColorF f30 c777 from '../css/base.css'
+    composes: bgColorF f30 c777 from '../css/base.css'
 }
 .indents_head{
     display: flex;
@@ -82,6 +82,11 @@
     height: 0.84rem;
     line-height: 0.84rem;
     padding-right: 0.3rem;
+}
+.operate{
+    height:0.84rem;
+    line-height: 0.84rem;
+    composes:pl30 pr30 bgColorF from '../css/base.css';
 }
 .operate_item{
     float: right;

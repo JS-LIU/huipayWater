@@ -35,20 +35,31 @@ const Station = React.createClass({
     }
 });
 const StationList = React.createClass({
+    alert:function(index){
+        return()=>{
+          alert(index);
+        }
+    },
     render: function () {
         let stationNodes = this.props.station.stationList.map((item,index)=>{
             return(
-                <li  key={index}>
+                <li key={index}>
                     <Link to="/StationCertain" className={stationStyle.stationList_item}>
                         <div className={stationStyle.item_pic_box}>
                             <img src="" alt="" className={stationStyle.item_pic}/>
                         </div>
                         <div className={stationStyle.item_descript}>
                             <p className={stationStyle.item_station_name}>{item.title}
-                                {item.approve?<img src={item.approveImg} className={stationStyle.item_station_approve}/>:""}
-                            </p>
+                            {item.approve?<img src={item.approveImg} className={stationStyle.item_station_approve}/>:""}
+                        </p>
                             <p className={stationStyle.item_station_evaluate}>
-                                <span>fgdsfgsd</span>
+                                <ul>
+                                    <li className={0<item.evaluate?stationStyle.starGrade_orange:stationStyle.starGrade_gray} onClick={this.alert(index)}></li>
+                                    <li className={1<item.evaluate?stationStyle.starGrade_orange:stationStyle.starGrade_gray}></li>
+                                    <li className={2<item.evaluate?stationStyle.starGrade_orange:stationStyle.starGrade_gray}></li>
+                                    <li className={3<item.evaluate?stationStyle.starGrade_orange:stationStyle.starGrade_gray}></li>
+                                    <li className={4<item.evaluate?stationStyle.starGrade_orange:stationStyle.starGrade_gray}></li>
+                                </ul>
                                 <span className={stationStyle.item_evaluate_sale}>月售：{item.sale}</span>
                                 <span></span>
                             </p>

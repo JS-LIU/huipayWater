@@ -24,7 +24,6 @@ const Map = React.createClass({
                 this.props.mapActionKeys.setLocationCity(city);
             },1000);
         });
-
     },
     render: function () {
         return (

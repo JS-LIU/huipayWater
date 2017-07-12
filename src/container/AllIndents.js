@@ -2,7 +2,7 @@ let React = require('react');
 let { bindActionCreators } = require('redux');
 let { Link } = require('react-router');
 let { connect } = require('react-redux');
-
+let Button = require ('../components/Button');
 import {historyUrlsActions} from '../redux/actions/historyUrlsActions';
 import allIndentsStyle from '../css/allIndentsStyle.css';
 
@@ -11,63 +11,49 @@ const AllIndents = React.createClass({
         this.props.historyUrlsActionKeys.pushUrl('/AllIndents');
         this.props.historyUrlsActionKeys.mark('/AllIndents');
     },
-    console:function(index){
-        return()=> {
-            console.log(index)
-        }
-    },
+
     render: function () {
-        let indentsNodes = this.props.allIndents.indentsList.map((item,index)=>{
-            return(
-                <div className={allIndentsStyle.indentsNodes} key={index}>
-                    <div className={allIndentsStyle.indents_head}>
-                        <p className={allIndentsStyle.indents_store_name}>{item.storeName}</p>
-                        <p className={allIndentsStyle.indents_state}>{item.condition}</p>
-                    </div>
-                    <ul className={allIndentsStyle.productList}>
-                        {item.productList.map((item,index)=> {
-                            return (
-                                <li key={index} className={allIndentsStyle.productNodes}>
-                                    <div className={allIndentsStyle.product_pic}><img src={item.pic} alt="" /></div>
-                                    <div className={allIndentsStyle.product_detail}>
-                                        <p className={allIndentsStyle.product_name}>{item.productName}</p>
-                                        <p className={allIndentsStyle.product_volume}>{item.volume}</p>
-                                        <p className={allIndentsStyle.product_price}>
-                                            ￥ <span className={allIndentsStyle.product_sale}>{item.sale}</span> x {item.number}
-                                        </p>
-                                    </div>
-                                </li>
-                            )
-                        })}
-                    </ul>
-                    <p className={allIndentsStyle.statistics}>
-                        共{item.number}件商品，实付：
-                        <span className={allIndentsStyle.price_unit}>￥</span>
-                        <span className={allIndentsStyle.price_total}></span>
-                    </p>
-                    {item.waitReturn?"":<div>
-                        {item.complete || item.saleReturn ?
-                            <Link to="/" className={allIndentsStyle.next_operate}>
-                                <p className={allIndentsStyle.operate_item}  onClick={this.console(0)}>再来一单</p>
-                            </Link>:
-                            <div className={allIndentsStyle.next_operate}>
-                                {item.payment?<Link to="/" className={allIndentsStyle.operate_item} onClick={this.console(1)}>支付</Link>:
-                                    <div>
-                                        {item.delivery?<Link to="/" className={allIndentsStyle.operate_item} onClick={this.console(2)}>签收</Link>:
-                                            <div>
-                                                <Link to="/" className={allIndentsStyle.operate_item} onClick={this.console(0)}>再来一单</Link>
-                                                <Link to="/" className={allIndentsStyle.operate_item}  onClick={this.console(3)}>评价</Link>
-                                            </div>}
-                                    </div>}
-                            </div>}
-                        </div>}
-                </div>
-            )
-        });
         return (
             <div className={allIndentsStyle.allIndents}>
-                <div className={allIndentsStyle.title}>全部订单</div>
-                {indentsNodes}
+                {/*<div className={allIndentsStyle.title}>全部订单</div>*/}
+                <div className={allIndentsStyle.indentsNodes} >
+                    <div className={allIndentsStyle.indents_head}>
+                        <p className={allIndentsStyle.indents_store_name}>乐百氏旗舰店</p>
+                        <p className={allIndentsStyle.indents_state}>待付款</p>
+                    </div>
+                    <ul className={allIndentsStyle.productList}>
+                        <li className={allIndentsStyle.productNodes}>
+                            <div className={allIndentsStyle.product_pic}><img src="src/images/goods_ticket_bg.png" alt=""/></div>
+                            <div className={allIndentsStyle.product_detail}>
+                                <p className={allIndentsStyle.product_name}>乐百氏 矿泉水</p>
+                                <p className={allIndentsStyle.product_volume}>18.9L</p>
+                                <p className={allIndentsStyle.product_price}>
+                                    ￥ <span className={allIndentsStyle.product_sale}>22.00</span> x 1
+                                </p>
+                            </div>
+                        </li>
+                        <li className={allIndentsStyle.productNodes}>
+                            <div className={allIndentsStyle.product_pic}><img src="src/images/goods_ticket_bg.png" alt=""/></div>
+                            <div className={allIndentsStyle.product_detail}>
+                                <p className={allIndentsStyle.product_name}>乐百氏 矿泉水</p>
+                                <p className={allIndentsStyle.product_volume}>18.9L</p>
+                                <p className={allIndentsStyle.product_price}>
+                                    ￥ <span className={allIndentsStyle.product_sale}>22.00</span> x 1
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p className={allIndentsStyle.statistics}>
+                        共1件商品，实付：
+                        <span className={allIndentsStyle.price_unit}>￥</span>
+                        <span className={allIndentsStyle.price_total}>23.00</span>
+                    </p>
+                    <div className={allIndentsStyle.operate}>
+                        <p className={allIndentsStyle.operate_item}>再来一单</p>
+                    </div>
+                </div>
+
+
             </div>
         )
     }

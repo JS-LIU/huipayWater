@@ -17,7 +17,8 @@ export const allIndentsInit = {
             delivery:false,
             evaluate:false,
             complete:false,
-            saleReturn:false
+            saleReturn:false,
+            cancel:false,
         },
         {
             storeName:"乐百氏旗舰店",
@@ -36,7 +37,8 @@ export const allIndentsInit = {
             delivery:false,
             evaluate:true,
             complete:false,
-            saleReturn:false
+            saleReturn:false,
+            cancel:false,
         },
         {
             storeName:"自营",
@@ -62,7 +64,8 @@ export const allIndentsInit = {
             delivery:true,
             evaluate:false,
             complete:false,
-            saleReturn:false
+            saleReturn:false,
+            cancel:false,
         },
         {
             storeName:"乐百氏旗舰店",
@@ -81,7 +84,8 @@ export const allIndentsInit = {
             delivery:false,
             evaluate:false,
             complete:true,
-            saleReturn:false
+            saleReturn:false,
+            cancel:false,
         },
         {
             storeName:"自营",
@@ -101,13 +105,68 @@ export const allIndentsInit = {
                     number:'1',
                 },
             ],
-            condition:'已退货',
+            condition:'已退款',
             waitReturn:false,
             payment:false,
             delivery:false,
             evaluate:false,
             complete:false,
-            saleReturn:true
+            saleReturn:true,
+            cancel:false,
+        },
+        {
+            storeName:"自营",
+            productList:[
+                {
+                    productName:'喜腾山泉 天然饮用水',
+                    pic:'src/images/goods_ticket_bg.png',
+                    volume:'18L',
+                    sale:'22.00',
+                    number:'1',
+                },
+                {
+                    productName:'喜腾山泉 天然饮用水 水票',
+                    pic:'src/images/goods_ticket_bg.png',
+                    volume:'18L',
+                    sale:'22.00',
+                    number:'1',
+                },
+            ],
+            condition:'退货中',
+            waitReturn:true,
+            payment:false,
+            delivery:false,
+            evaluate:false,
+            complete:false,
+            saleReturn:false,
+            cancel:false,
+        },
+        {
+            storeName:"自营",
+            productList:[
+                {
+                    productName:'喜腾山泉 天然饮用水',
+                    pic:'src/images/goods_ticket_bg.png',
+                    volume:'18L',
+                    sale:'22.00',
+                    number:'1',
+                },
+                {
+                    productName:'喜腾山泉 天然饮用水 水票',
+                    pic:'src/images/goods_ticket_bg.png',
+                    volume:'18L',
+                    sale:'22.00',
+                    number:'1',
+                },
+            ],
+            condition:'已取消',
+            waitReturn:false,
+            payment:false,
+            delivery:false,
+            evaluate:false,
+            complete:false,
+            saleReturn:false,
+            cancel:true
         }
     ]
 };

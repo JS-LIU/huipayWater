@@ -1,0 +1,13 @@
+.buttonStyle{
+    margin-top: 0.3rem;
+    margin-left: 0.9rem;
+    color:red;
+    background: #FFFFFF;
+}
+
+.textStyle{
+
+    padding: 0.3rem 0.9rem;
+    color:blue;
+    font-size: 0.32rem;
+}

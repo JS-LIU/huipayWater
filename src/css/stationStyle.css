@@ -82,9 +82,24 @@
     margin-left: 0.16rem;
 }
 .item_station_evaluate{
+    display: flex;
     margin-top:0.28rem;
     color: #999999;
     composes:f24 from '../css/base.css';
+}
+.starGrade_orange{
+    float: left;
+    height: 0.3rem;
+    width: 0.3rem;
+    background: url("../../src/images/icon_star_orange.png") no-repeat center;
+    background-size: 0.25rem auto;
+}
+.starGrade_gray{
+    float: left;
+    height: 0.3rem;
+    width: 0.3rem;
+    background: url("../../src/images/icon_star_gray.png") no-repeat center;
+    background-size: 0.25rem auto;
 }
 .item_evaluate_sale{
     margin-left: 0.34rem;

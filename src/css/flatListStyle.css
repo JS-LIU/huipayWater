@@ -1,0 +1,8 @@
+.flatList{
+    height: 2rem;
+}
+.listHeader,
+.listFooter,
+.itemSeparator{
+    composes:tc f32 from '../css/base.css';
+}
